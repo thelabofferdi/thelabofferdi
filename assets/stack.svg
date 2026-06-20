@@ -1,57 +1,47 @@
 <svg width="1600" height="580" viewBox="0 0 1600 580" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">The Lab of Ferdi stack</title>
-  <desc id="desc">Technical stack grouped by frontend, backend, mobile and tooling</desc>
+  <title id="title">Backend stack map</title>
+  <desc id="desc">Backend technologies grouped by runtime, data, automation and operations</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="580" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#07110D"/>
-      <stop offset="1" stop-color="#10261E"/>
+      <stop stop-color="#080D19"/>
+      <stop offset="1" stop-color="#151C2E"/>
     </linearGradient>
-    <pattern id="dots" width="34" height="34" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="2" fill="#22E6A4" fill-opacity="0.09"/>
-    </pattern>
   </defs>
-  <rect width="1600" height="580" rx="34" fill="url(#bg)"/>
-  <rect width="1600" height="580" rx="34" fill="url(#dots)"/>
-  <text x="74" y="86" fill="#F2FFF9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="48" font-weight="900">Stack Technique</text>
-  <text x="76" y="128" fill="#A8D9C8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">A pragmatic toolbox for shipping clean products from idea to production.</text>
+  <rect width="1600" height="580" rx="30" fill="url(#bg)"/>
+  <path d="M72 150H1528M72 290H1528M72 430H1528" stroke="#33415F" stroke-width="1"/>
+  <path d="M400 130V490M800 130V490M1200 130V490" stroke="#33415F" stroke-width="1"/>
+  <text x="72" y="84" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="900">Backend Stack Map</text>
+  <text x="74" y="124" fill="#8EA4C8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">The tools I use to build stable APIs, service cores, workers and data-heavy products.</text>
 
-  <g transform="translate(70 182)">
-    <rect x="0" y="0" width="340" height="300" rx="28" fill="#07130F" stroke="#22E6A4" stroke-opacity="0.24"/>
-    <text x="32" y="58" fill="#22E6A4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900">Frontend</text>
-    <text x="32" y="100" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">React</text>
-    <text x="32" y="139" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">TypeScript</text>
-    <text x="32" y="178" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Next.js / Vite</text>
-    <text x="32" y="217" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Dashboards</text>
-    <text x="32" y="256" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Product UX</text>
+  <g transform="translate(72 178)">
+    <text x="0" y="0" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="900">API RUNTIMES</text>
+    <text x="0" y="54" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">FastAPI</text>
+    <text x="0" y="94" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Fastify</text>
+    <text x="0" y="134" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Express</text>
+    <text x="0" y="174" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Axum</text>
+  </g>
+  <g transform="translate(470 178)">
+    <text x="0" y="0" fill="#68D8EF" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="900">DATA LAYERS</text>
+    <text x="0" y="54" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">PostgreSQL</text>
+    <text x="0" y="94" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">SQLite</text>
+    <text x="0" y="134" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Redis</text>
+    <text x="0" y="174" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Supabase</text>
+  </g>
+  <g transform="translate(870 178)">
+    <text x="0" y="0" fill="#A78BFA" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="900">ENGINES</text>
+    <text x="0" y="54" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Rust / Tokio</text>
+    <text x="0" y="94" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Go workers</text>
+    <text x="0" y="134" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">WebSockets</text>
+    <text x="0" y="174" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Automation</text>
+  </g>
+  <g transform="translate(1260 178)">
+    <text x="0" y="0" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="900">OPS</text>
+    <text x="0" y="54" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Docker</text>
+    <text x="0" y="94" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">CI/CD</text>
+    <text x="0" y="134" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">PM2</text>
+    <text x="0" y="174" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Prometheus</text>
   </g>
 
-  <g transform="translate(450 182)">
-    <rect x="0" y="0" width="340" height="300" rx="28" fill="#07130F" stroke="#22E6A4" stroke-opacity="0.24"/>
-    <text x="32" y="58" fill="#22E6A4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900">Backend</text>
-    <text x="32" y="100" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Python</text>
-    <text x="32" y="139" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">FastAPI</text>
-    <text x="32" y="178" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">PostgreSQL</text>
-    <text x="32" y="217" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Node.js APIs</text>
-    <text x="32" y="256" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Auth and jobs</text>
-  </g>
-
-  <g transform="translate(830 182)">
-    <rect x="0" y="0" width="340" height="300" rx="28" fill="#07130F" stroke="#22E6A4" stroke-opacity="0.24"/>
-    <text x="32" y="58" fill="#22E6A4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900">Mobile</text>
-    <text x="32" y="100" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">React Native</text>
-    <text x="32" y="139" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Expo</text>
-    <text x="32" y="178" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Offline-first flows</text>
-    <text x="32" y="217" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Maps and telemetry</text>
-    <text x="32" y="256" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">User operations</text>
-  </g>
-
-  <g transform="translate(1210 182)">
-    <rect x="0" y="0" width="320" height="300" rx="28" fill="#07130F" stroke="#22E6A4" stroke-opacity="0.24"/>
-    <text x="32" y="58" fill="#22E6A4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26" font-weight="900">Tooling</text>
-    <text x="32" y="100" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Docker</text>
-    <text x="32" y="139" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">GitHub Actions</text>
-    <text x="32" y="178" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">AI workflows</text>
-    <text x="32" y="217" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Monitoring</text>
-    <text x="32" y="256" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">Automation</text>
-  </g>
+  <rect x="72" y="500" width="1456" height="44" rx="12" fill="#101828" stroke="#33415F"/>
+  <text x="96" y="529" fill="#DDE6F7" font-family="JetBrains Mono, Consolas, monospace" font-size="18">contract -> validation -> auth -> persistence -> workers -> metrics -> deployment</text>
 </svg>

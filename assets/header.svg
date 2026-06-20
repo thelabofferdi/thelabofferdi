@@ -1,57 +1,57 @@
 <svg width="1600" height="460" viewBox="0 0 1600 460" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">The Lab of Ferdi GitHub profile header</title>
-  <desc id="desc">Dark green futuristic header for thelabofferdi</desc>
+  <title id="title">Ferdi Backend Lab profile header</title>
+  <desc id="desc">Original backend-first header with service topology and API blocks</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="460" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#06110D"/>
-      <stop offset="0.48" stop-color="#0D1B16"/>
-      <stop offset="1" stop-color="#102D23"/>
+      <stop stop-color="#080D19"/>
+      <stop offset="0.5" stop-color="#101828"/>
+      <stop offset="1" stop-color="#1A2338"/>
     </linearGradient>
-    <radialGradient id="halo" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1255 170) rotate(122) scale(420 560)">
-      <stop stop-color="#22E6A4" stop-opacity="0.5"/>
-      <stop offset="0.42" stop-color="#22E6A4" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#22E6A4" stop-opacity="0"/>
+    <radialGradient id="heat" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1270 130) rotate(132) scale(480 360)">
+      <stop stop-color="#FFB86B" stop-opacity="0.42"/>
+      <stop offset="0.46" stop-color="#68D8EF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#68D8EF" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M 48 0 L 0 0 0 48" stroke="#22E6A4" stroke-opacity="0.08" stroke-width="1"/>
+    <pattern id="trace" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M0 36H72M36 0V72" stroke="#68D8EF" stroke-opacity="0.07" stroke-width="1"/>
+      <circle cx="36" cy="36" r="3" fill="#FFB86B" fill-opacity="0.18"/>
     </pattern>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
-  <rect width="1600" height="460" rx="34" fill="url(#bg)"/>
-  <rect width="1600" height="460" rx="34" fill="url(#grid)"/>
-  <rect width="1600" height="460" rx="34" fill="url(#halo)"/>
-  <path d="M75 384C235 286 330 302 485 355C665 416 760 395 890 292C1028 183 1124 148 1290 187C1412 216 1491 188 1545 134" stroke="#22E6A4" stroke-opacity="0.18" stroke-width="3"/>
-  <path d="M60 404C218 320 342 338 498 383C673 433 790 406 940 305C1078 212 1160 196 1312 233C1432 263 1503 236 1550 196" stroke="#91FFE0" stroke-opacity="0.12" stroke-width="2"/>
+  <rect width="1600" height="460" rx="30" fill="url(#bg)"/>
+  <rect width="1600" height="460" rx="30" fill="url(#trace)"/>
+  <rect width="1600" height="460" rx="30" fill="url(#heat)"/>
 
-  <g transform="translate(90 94)">
-    <text x="0" y="0" fill="#22E6A4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="7">GITHUB PROFILE</text>
-    <text x="0" y="93" fill="#F2FFF9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="76" font-weight="900" letter-spacing="1">THE LAB OF FERDI</text>
-    <text x="2" y="151" fill="#B8E8D8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="31" font-weight="500">Full-stack products, AI tools and automation systems.</text>
-    <g transform="translate(0 206)">
-      <rect x="0" y="0" width="126" height="44" rx="22" fill="#22E6A4" fill-opacity="0.16" stroke="#22E6A4" stroke-opacity="0.55"/>
-      <text x="28" y="29" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">APIs</text>
-      <rect x="146" y="0" width="132" height="44" rx="22" fill="#22E6A4" fill-opacity="0.12" stroke="#22E6A4" stroke-opacity="0.4"/>
-      <text x="176" y="29" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">SaaS</text>
-      <rect x="298" y="0" width="162" height="44" rx="22" fill="#22E6A4" fill-opacity="0.1" stroke="#22E6A4" stroke-opacity="0.32"/>
-      <text x="330" y="29" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">Mobile</text>
-      <rect x="480" y="0" width="174" height="44" rx="22" fill="#22E6A4" fill-opacity="0.08" stroke="#22E6A4" stroke-opacity="0.28"/>
-      <text x="512" y="29" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="800">AI Tools</text>
+  <g transform="translate(80 78)">
+    <text x="0" y="0" fill="#68D8EF" font-family="JetBrains Mono, Consolas, monospace" font-size="20" font-weight="800" letter-spacing="5">BACKEND-FIRST DEVELOPER</text>
+    <text x="0" y="88" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="76" font-weight="900" letter-spacing="-2">Ferdi Backend Lab</text>
+    <text x="3" y="143" fill="#C8D3E7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="30" font-weight="500">APIs, service cores, automation engines and data layers.</text>
+    <g transform="translate(0 202)">
+      <rect x="0" y="0" width="168" height="46" rx="12" fill="#FFB86B" fill-opacity="0.16" stroke="#FFB86B" stroke-opacity="0.56"/>
+      <text x="24" y="30" fill="#FFE5C4" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="800">REST APIs</text>
+      <rect x="188" y="0" width="190" height="46" rx="12" fill="#68D8EF" fill-opacity="0.12" stroke="#68D8EF" stroke-opacity="0.45"/>
+      <text x="212" y="30" fill="#D8F8FF" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="800">Workers</text>
+      <rect x="398" y="0" width="210" height="46" rx="12" fill="#A78BFA" fill-opacity="0.12" stroke="#A78BFA" stroke-opacity="0.45"/>
+      <text x="422" y="30" fill="#E8DDFF" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="800">Databases</text>
+      <rect x="628" y="0" width="198" height="46" rx="12" fill="#253047" stroke="#FFB86B" stroke-opacity="0.32"/>
+      <text x="652" y="30" fill="#F5F7FB" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="800">Dockerized</text>
     </g>
   </g>
 
-  <g transform="translate(1110 70)" filter="url(#softGlow)">
-    <rect x="0" y="0" width="320" height="320" rx="46" fill="#07150F" fill-opacity="0.74" stroke="#22E6A4" stroke-opacity="0.25"/>
-    <path d="M56 238V84H102V198H164V238H56Z" fill="#22E6A4"/>
-    <path d="M184 238V84H286V124H230V147H278V185H230V238H184Z" fill="#D8FFF2"/>
-    <circle cx="274" cy="62" r="14" fill="#22E6A4"/>
-    <circle cx="52" cy="270" r="10" fill="#91FFE0" fill-opacity="0.75"/>
-    <path d="M52 50H270" stroke="#22E6A4" stroke-opacity="0.22" stroke-width="3"/>
-    <path d="M52 272H270" stroke="#22E6A4" stroke-opacity="0.18" stroke-width="3"/>
+  <g transform="translate(1048 74)">
+    <rect x="0" y="0" width="392" height="300" rx="28" fill="#0B1222" stroke="#33415F" stroke-width="1.5"/>
+    <rect x="32" y="32" width="140" height="54" rx="14" fill="#151C2E" stroke="#FFB86B" stroke-opacity="0.6"/>
+    <text x="57" y="67" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="17" font-weight="800">API GW</text>
+    <rect x="220" y="32" width="120" height="54" rx="14" fill="#151C2E" stroke="#68D8EF" stroke-opacity="0.58"/>
+    <text x="249" y="67" fill="#68D8EF" font-family="JetBrains Mono, Consolas, monospace" font-size="17" font-weight="800">AUTH</text>
+    <rect x="68" y="128" width="118" height="54" rx="14" fill="#151C2E" stroke="#A78BFA" stroke-opacity="0.58"/>
+    <text x="96" y="163" fill="#DCCBFF" font-family="JetBrains Mono, Consolas, monospace" font-size="17" font-weight="800">JOB</text>
+    <rect x="240" y="128" width="106" height="54" rx="14" fill="#151C2E" stroke="#FFB86B" stroke-opacity="0.48"/>
+    <text x="268" y="163" fill="#FFE5C4" font-family="JetBrains Mono, Consolas, monospace" font-size="17" font-weight="800">DB</text>
+    <rect x="126" y="224" width="154" height="44" rx="12" fill="#FFB86B" fill-opacity="0.12" stroke="#FFB86B" stroke-opacity="0.42"/>
+    <text x="159" y="252" fill="#FFE5C4" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">OBSERVE</text>
+    <path d="M172 59H220M280 86V128M172 86L127 128M186 155H240M293 182L203 224" stroke="#C8D3E7" stroke-opacity="0.35" stroke-width="2"/>
+    <circle cx="172" cy="59" r="4" fill="#FFB86B"/>
+    <circle cx="220" cy="59" r="4" fill="#68D8EF"/>
+    <circle cx="293" cy="182" r="4" fill="#FFB86B"/>
   </g>
 </svg>

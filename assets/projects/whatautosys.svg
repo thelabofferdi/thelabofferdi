@@ -1,28 +1,26 @@
 <svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">WhatAutoSys project card</title>
-  <desc id="desc">Automation system project series</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#07110D"/>
-      <stop offset="1" stop-color="#0D2E22"/>
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="300" rx="34" fill="url(#bg)"/>
-  <rect x="44" y="38" width="1512" height="224" rx="28" fill="#050A08" fill-opacity="0.72" stroke="#22E6A4" stroke-opacity="0.22"/>
-  <text x="82" y="104" fill="#22E6A4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="4">PUBLIC PROJECT</text>
-  <text x="82" y="165" fill="#F2FFF9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="900">WhatAutoSys</text>
-  <text x="82" y="210" fill="#B8E8D8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25">JavaScript automation system series focused on repeatable operational flows.</text>
-  <g transform="translate(82 232)">
-    <rect x="0" y="0" width="132" height="38" rx="19" fill="#22E6A4" fill-opacity="0.14" stroke="#22E6A4" stroke-opacity="0.35"/>
-    <text x="26" y="25" fill="#D8FFF2" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700">JavaScript</text>
-    <rect x="150" y="0" width="138" height="38" rx="19" fill="#22E6A4" fill-opacity="0.1" stroke="#22E6A4" stroke-opacity="0.28"/>
-    <text x="178" y="25" fill="#D8FFF2" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700">Automation</text>
-    <rect x="306" y="0" width="96" height="38" rx="19" fill="#22E6A4" fill-opacity="0.1" stroke="#22E6A4" stroke-opacity="0.28"/>
-    <text x="333" y="25" fill="#D8FFF2" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700">Ops</text>
+  <title id="title">WhatAutoSys backend architecture card</title>
+  <desc id="desc">Backend-focused project card for WhatAutoSys</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1600" y2="300" gradientUnits="userSpaceOnUse"><stop stop-color="#080D19"/><stop offset="1" stop-color="#151C2E"/></linearGradient></defs>
+  <rect width="1600" height="300" rx="30" fill="url(#bg)"/>
+  <rect x="44" y="36" width="1512" height="228" rx="24" fill="#0B1222" stroke="#33415F"/>
+  <text x="82" y="91" fill="#68D8EF" font-family="JetBrains Mono, Consolas, monospace" font-size="20" font-weight="900">/automation/whatautosys</text>
+  <text x="82" y="153" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="900">WhatAutoSys</text>
+  <text x="82" y="198" fill="#C8D3E7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">WhatsApp commercial agent with Node backend, local database, sockets and extensions.</text>
+  <g transform="translate(82 220)">
+    <rect x="0" y="0" width="146" height="38" rx="10" fill="#FFB86B" fill-opacity="0.14" stroke="#FFB86B" stroke-opacity="0.48"/>
+    <text x="22" y="25" fill="#FFE5C4" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">Express</text>
+    <rect x="162" y="0" width="142" height="38" rx="10" fill="#68D8EF" fill-opacity="0.12" stroke="#68D8EF" stroke-opacity="0.45"/>
+    <text x="185" y="25" fill="#D8F8FF" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">Socket.IO</text>
+    <rect x="320" y="0" width="160" height="38" rx="10" fill="#A78BFA" fill-opacity="0.12" stroke="#A78BFA" stroke-opacity="0.45"/>
+    <text x="345" y="25" fill="#E8DDFF" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">better-sqlite3</text>
+    <rect x="496" y="0" width="162" height="38" rx="10" fill="#253047" stroke="#FFB86B" stroke-opacity="0.32"/>
+    <text x="521" y="25" fill="#F5F7FB" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">Mistral + Baileys</text>
   </g>
-  <g transform="translate(1255 78)">
-    <rect x="0" y="0" width="216" height="142" rx="32" fill="#22E6A4" fill-opacity="0.12" stroke="#22E6A4" stroke-opacity="0.32"/>
-    <text x="38" y="68" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900">AUTO</text>
-    <text x="38" y="103" fill="#22E6A4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900">SYS</text>
+  <g transform="translate(1210 72)">
+    <rect x="0" y="0" width="260" height="152" rx="24" fill="#101828" stroke="#68D8EF" stroke-opacity="0.38"/>
+    <text x="34" y="53" fill="#68D8EF" font-family="JetBrains Mono, Consolas, monospace" font-size="18" font-weight="900">LOCAL OPS</text>
+    <text x="34" y="90" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900">Extensions</text>
+    <text x="34" y="123" fill="#8EA4C8" font-family="JetBrains Mono, Consolas, monospace" font-size="16">events -> plugins</text>
   </g>
 </svg>

@@ -1,38 +1,39 @@
 <svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">The Lab of Ferdi whoami card</title>
-  <desc id="desc">Terminal-inspired profile summary for thelabofferdi</desc>
+  <title id="title">Backend identity card</title>
+  <desc id="desc">Terminal card describing Ferdi as a backend-first developer</desc>
   <defs>
-    <linearGradient id="card" x1="0" y1="0" x2="1600" y2="520" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#07110D"/>
-      <stop offset="1" stop-color="#0D241B"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080D19"/>
+      <stop offset="1" stop-color="#151C2E"/>
     </linearGradient>
-    <radialGradient id="spot" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(350 100) rotate(49) scale(500 260)">
-      <stop stop-color="#22E6A4" stop-opacity="0.18"/>
-      <stop offset="1" stop-color="#22E6A4" stop-opacity="0"/>
-    </radialGradient>
   </defs>
-  <rect width="1600" height="520" rx="34" fill="url(#card)"/>
-  <rect width="1600" height="520" rx="34" fill="url(#spot)"/>
-  <rect x="44" y="42" width="1512" height="436" rx="28" fill="#050A08" fill-opacity="0.72" stroke="#22E6A4" stroke-opacity="0.2"/>
-  <circle cx="88" cy="82" r="10" fill="#FF5F56"/>
-  <circle cx="122" cy="82" r="10" fill="#FFBD2E"/>
-  <circle cx="156" cy="82" r="10" fill="#27C93F"/>
-  <text x="199" y="90" fill="#8EEBCB" font-family="JetBrains Mono, Consolas, monospace" font-size="22">~/thelabofferdi/profile</text>
+  <rect width="1600" height="520" rx="30" fill="url(#bg)"/>
+  <rect x="48" y="48" width="1504" height="424" rx="24" fill="#0B1222" stroke="#33415F"/>
+  <rect x="48" y="48" width="1504" height="54" rx="24" fill="#101828"/>
+  <circle cx="86" cy="75" r="8" fill="#FF6B6B"/>
+  <circle cx="116" cy="75" r="8" fill="#FFB86B"/>
+  <circle cx="146" cy="75" r="8" fill="#68D8EF"/>
+  <text x="184" y="83" fill="#8EA4C8" font-family="JetBrains Mono, Consolas, monospace" font-size="18">backend/identity.yaml</text>
 
-  <g transform="translate(88 142)">
-    <text x="0" y="0" fill="#22E6A4" font-family="JetBrains Mono, Consolas, monospace" font-size="24" font-weight="700">$ whoami</text>
-    <text x="0" y="54" fill="#F2FFF9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="900">the lab of ferdi</text>
-    <text x="0" y="101" fill="#B7E7D6" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="26">Developer building product-grade web apps, APIs, mobile flows and AI-powered tools.</text>
-    <text x="0" y="159" fill="#22E6A4" font-family="JetBrains Mono, Consolas, monospace" font-size="22">$ focus --current</text>
-    <text x="0" y="202" fill="#D8FFF2" font-family="JetBrains Mono, Consolas, monospace" font-size="22">TypeScript / Python / React / FastAPI / automation / data-driven products</text>
-    <text x="0" y="260" fill="#22E6A4" font-family="JetBrains Mono, Consolas, monospace" font-size="22">$ profile --signal</text>
-    <text x="0" y="303" fill="#D8FFF2" font-family="JetBrains Mono, Consolas, monospace" font-size="22">30+ repositories, public experiments and shipped product foundations.</text>
+  <g transform="translate(88 140)">
+    <text x="0" y="0" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="800">role:</text>
+    <text x="112" y="0" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="38" font-weight="900">Backend-first developer</text>
+    <text x="0" y="58" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="800">scope:</text>
+    <text x="112" y="58" fill="#C8D3E7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27">APIs, auth, jobs, databases, automation, realtime services.</text>
+    <text x="0" y="116" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="800">stack:</text>
+    <text x="112" y="116" fill="#DDE6F7" font-family="JetBrains Mono, Consolas, monospace" font-size="23">FastAPI | Fastify | Express | Rust/Axum | Go workers | Docker</text>
+    <text x="0" y="174" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="800">data:</text>
+    <text x="112" y="174" fill="#DDE6F7" font-family="JetBrains Mono, Consolas, monospace" font-size="23">Postgres | SQLite | Redis | Supabase | Alembic | Prisma</text>
+    <text x="0" y="232" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="800">bias:</text>
+    <text x="112" y="232" fill="#C8D3E7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="27">Clean contracts first, UI second, production constraints always.</text>
   </g>
 
-  <g transform="translate(1170 140)">
-    <rect x="0" y="0" width="270" height="270" rx="36" fill="#0B1813" stroke="#22E6A4" stroke-opacity="0.26"/>
-    <circle cx="135" cy="103" r="54" fill="#22E6A4" fill-opacity="0.18" stroke="#22E6A4" stroke-opacity="0.45"/>
-    <path d="M78 213C91 177 111 160 135 160C159 160 179 177 192 213" stroke="#D8FFF2" stroke-width="20" stroke-linecap="round"/>
-    <text x="78" y="247" fill="#22E6A4" font-family="JetBrains Mono, Consolas, monospace" font-size="20" font-weight="700">@thelabofferdi</text>
+  <g transform="translate(1204 150)">
+    <rect x="0" y="0" width="236" height="236" rx="28" fill="#101828" stroke="#FFB86B" stroke-opacity="0.38"/>
+    <path d="M55 69H181M55 118H181M55 167H181" stroke="#68D8EF" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="55" cy="69" r="14" fill="#FFB86B"/>
+    <circle cx="55" cy="118" r="14" fill="#A78BFA"/>
+    <circle cx="55" cy="167" r="14" fill="#68D8EF"/>
+    <text x="54" y="216" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="18" font-weight="800">@thelabofferdi</text>
   </g>
 </svg>

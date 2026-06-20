@@ -1,16 +1,19 @@
 <svg width="1600" height="250" viewBox="0 0 1600 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">The Lab of Ferdi footer</title>
-  <desc id="desc">Profile footer with closing statement</desc>
+  <title id="title">Ferdi backend footer</title>
+  <desc id="desc">Footer with backend engineering statement</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="250" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#06110D"/>
-      <stop offset="1" stop-color="#102D23"/>
+      <stop stop-color="#080D19"/>
+      <stop offset="1" stop-color="#1A2338"/>
     </linearGradient>
   </defs>
-  <rect width="1600" height="250" rx="34" fill="url(#bg)"/>
-  <path d="M0 198C135 142 245 122 370 145C552 178 644 231 848 180C1055 128 1125 80 1314 104C1430 119 1515 91 1600 47" stroke="#22E6A4" stroke-opacity="0.22" stroke-width="3"/>
-  <text x="80" y="104" fill="#F2FFF9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="900">Build fast. Keep it clean. Ship with intent.</text>
-  <text x="82" y="153" fill="#B8E8D8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">thelabofferdi on GitHub</text>
-  <rect x="1280" y="70" width="220" height="90" rx="24" fill="#22E6A4" fill-opacity="0.14" stroke="#22E6A4" stroke-opacity="0.38"/>
-  <text x="1323" y="125" fill="#D8FFF2" font-family="JetBrains Mono, Consolas, monospace" font-size="26" font-weight="800">~/ship</text>
+  <rect width="1600" height="250" rx="30" fill="url(#bg)"/>
+  <path d="M78 178H520L580 102H832L892 142H1190L1260 78H1518" stroke="#68D8EF" stroke-opacity="0.35" stroke-width="3"/>
+  <circle cx="520" cy="178" r="8" fill="#FFB86B"/>
+  <circle cx="832" cy="102" r="8" fill="#A78BFA"/>
+  <circle cx="1190" cy="142" r="8" fill="#FFB86B"/>
+  <text x="76" y="94" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="42" font-weight="900">Stable APIs. Clear contracts. Observable systems.</text>
+  <text x="78" y="139" fill="#C8D3E7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="23">Backend-first profile for thelabofferdi</text>
+  <rect x="1260" y="94" width="244" height="58" rx="14" fill="#FFB86B" fill-opacity="0.13" stroke="#FFB86B" stroke-opacity="0.42"/>
+  <text x="1304" y="131" fill="#FFE5C4" font-family="JetBrains Mono, Consolas, monospace" font-size="20" font-weight="900">ship_backend()</text>
 </svg>
