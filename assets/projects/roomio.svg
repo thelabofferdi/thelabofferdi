@@ -1,0 +1,28 @@
+<svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Roomio project card</title>
+  <desc id="desc">Student housing platform</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07110D"/>
+      <stop offset="1" stop-color="#0D2E22"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="300" rx="34" fill="url(#bg)"/>
+  <rect x="44" y="38" width="1512" height="224" rx="28" fill="#050A08" fill-opacity="0.72" stroke="#22E6A4" stroke-opacity="0.22"/>
+  <text x="82" y="104" fill="#22E6A4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800" letter-spacing="4">PUBLIC PROJECT</text>
+  <text x="82" y="165" fill="#F2FFF9" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="900">Roomio</text>
+  <text x="82" y="210" fill="#B8E8D8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25">Student housing platform with a backend-first product foundation.</text>
+  <g transform="translate(82 232)">
+    <rect x="0" y="0" width="104" height="38" rx="19" fill="#22E6A4" fill-opacity="0.14" stroke="#22E6A4" stroke-opacity="0.35"/>
+    <text x="25" y="25" fill="#D8FFF2" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700">Python</text>
+    <rect x="122" y="0" width="112" height="38" rx="19" fill="#22E6A4" fill-opacity="0.1" stroke="#22E6A4" stroke-opacity="0.28"/>
+    <text x="151" y="25" fill="#D8FFF2" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700">Housing</text>
+    <rect x="252" y="0" width="120" height="38" rx="19" fill="#22E6A4" fill-opacity="0.1" stroke="#22E6A4" stroke-opacity="0.28"/>
+    <text x="279" y="25" fill="#D8FFF2" font-family="JetBrains Mono, Consolas, monospace" font-size="16" font-weight="700">Platform</text>
+  </g>
+  <g transform="translate(1255 78)">
+    <rect x="0" y="0" width="216" height="142" rx="32" fill="#22E6A4" fill-opacity="0.12" stroke="#22E6A4" stroke-opacity="0.32"/>
+    <text x="42" y="68" fill="#D8FFF2" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900">ROOM</text>
+    <text x="42" y="103" fill="#22E6A4" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900">OPS</text>
+  </g>
+</svg>
