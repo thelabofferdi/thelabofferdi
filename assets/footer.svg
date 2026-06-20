@@ -1,22 +1,24 @@
-<svg width="1600" height="250" viewBox="0 0 1600 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Footer profil backend</title>
-  <desc id="desc">Pied de page backend en francais</desc>
+<svg width="1600" height="180" viewBox="0 0 1600 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Backend lab footer</title>
+  <desc id="desc">Dark footer for TheLaboFerdi backend profile.</desc>
   <defs>
-    <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(32)">
-      <path d="M0 0V12" stroke="#111111" stroke-opacity="0.2" stroke-width="3"/>
-    </pattern>
-    <style>.mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}</style>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#010409"/>
+      <stop offset="1" stop-color="#0d1117"/>
+    </linearGradient>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+      .text{fill:#e6edf3}.muted{fill:#8b949e}.blue{fill:#58a6ff}.green{fill:#3fb950}
+    </style>
   </defs>
-  <rect width="1600" height="250" fill="#F2F0E7"/>
-  <rect x="24" y="24" width="1552" height="202" fill="none" stroke="#111111" stroke-width="4"/>
-  <rect x="58" y="58" width="1030" height="64" fill="#111111"/>
-  <text x="84" y="100" fill="#F2F0E7" class="sans" font-size="38" font-weight="1000">DES BACKENDS FIABLES POUR DE VRAIS PRODUITS.</text>
-  <rect x="58" y="146" width="575" height="44" fill="#9BFF00" stroke="#111111" stroke-width="3"/>
-  <text x="84" y="174" fill="#111111" class="mono" font-size="18" font-weight="900">construire() // livrer() // maintenir()</text>
-  <path d="M1110 172H1310L1368 98H1516" stroke="#111111" stroke-width="5"/>
-  <circle cx="1110" cy="172" r="11" fill="#9BFF00" stroke="#111111" stroke-width="4"/>
-  <circle cx="1310" cy="172" r="11" fill="#F2F0E7" stroke="#111111" stroke-width="4"/>
-  <circle cx="1368" cy="98" r="11" fill="#9BFF00" stroke="#111111" stroke-width="4"/>
-  <rect x="1168" y="56" width="190" height="34" fill="url(#hatch)" stroke="#111111" stroke-width="3"/>
-  <text x="1418" y="198" fill="#111111" class="mono" font-size="16" font-weight="900">FIN</text>
+  <rect width="1600" height="180" rx="10" fill="url(#bg)"/>
+  <rect x="22" y="22" width="1556" height="136" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <g class="sans">
+    <text x="58" y="78" class="text" font-size="30" font-weight="850">Des backends fiables pour de vrais produits.</text>
+    <text x="58" y="116" class="muted" font-size="18">construire() · livrer() · maintenir() · mesurer()</text>
+    <rect x="1180" y="58" width="300" height="54" rx="8" fill="#0b1d2e" stroke="#1f6feb"/>
+    <text x="1230" y="92" class="mono blue" font-size="17" font-weight="850">github.com/thelabofferdi</text>
+    <circle cx="1126" cy="86" r="14" fill="#3fb950"/>
+    <path d="M1118 86l6 6l12-16" stroke="#0d1117" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>

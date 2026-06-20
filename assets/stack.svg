@@ -1,61 +1,106 @@
-<svg width="1600" height="580" viewBox="0 0 1600 580" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Carte de stack backend</title>
-  <desc id="desc">Carte explicative de la stack backend en francais</desc>
+<svg width="1600" height="560" viewBox="0 0 1600 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Backend system overview</title>
+  <desc id="desc">Dark GitHub inspired architecture diagram showing client, API, services, workers and data storage.</desc>
   <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#010409"/>
+    </linearGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" stroke="#111111" stroke-opacity="0.08"/>
+      <path d="M32 0H0V32" stroke="#30363d" stroke-opacity="0.32"/>
     </pattern>
-    <style>.mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}</style>
+    <filter id="shadow" x="-15%" y="-20%" width="130%" height="145%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}.mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+      .text{fill:#e6edf3}.soft{fill:#c9d1d9}.muted{fill:#8b949e}.blue{fill:#58a6ff}.green{fill:#3fb950}.orange{fill:#d29922}.purple{fill:#bc8cff}
+      .card{fill:#0d1117;stroke:#30363d;stroke-width:1.6}.panel{fill:#161b22;stroke:#30363d;stroke-width:1.5}.edge{stroke:#58a6ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    </style>
   </defs>
-  <rect width="1600" height="580" fill="#F2F0E7"/>
-  <rect width="1600" height="580" fill="url(#grid)"/>
-  <rect x="24" y="24" width="1552" height="532" fill="none" stroke="#111111" stroke-width="4"/>
-  <rect x="58" y="54" width="1484" height="62" fill="#111111"/>
-  <text x="84" y="94" fill="#F2F0E7" class="sans" font-size="38" font-weight="1000">MA STACK BACKEND</text>
-  <text x="1160" y="94" fill="#9BFF00" class="mono" font-size="18" font-weight="900">UTILITE AVANT BUZZWORD</text>
 
-  <g transform="translate(58 150)">
-    <rect width="330" height="290" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
-    <rect x="0" y="0" width="330" height="48" fill="#9BFF00" stroke="#111111" stroke-width="3"/>
-    <text x="24" y="31" fill="#111111" class="mono" font-size="18" font-weight="900">CREER L'API</text>
-    <text x="26" y="94" fill="#111111" class="sans" font-size="27" font-weight="900">FastAPI</text>
-    <text x="26" y="138" fill="#111111" class="sans" font-size="27" font-weight="900">NestJS</text>
-    <text x="26" y="182" fill="#111111" class="sans" font-size="27" font-weight="900">Express</text>
-    <text x="26" y="232" fill="#111111" class="mono" font-size="16" font-weight="900">routes, validation, auth</text>
+  <rect width="1600" height="560" rx="10" fill="url(#bg)"/>
+  <rect width="1600" height="560" fill="url(#grid)" opacity="0.45"/>
+  <rect x="22" y="22" width="1556" height="516" rx="12" class="card"/>
+
+  <g class="sans">
+    <text x="58" y="78" class="text" font-size="38" font-weight="850">System Overview</text>
+    <text x="58" y="114" class="muted" font-size="18">Un flux backend lisible: client, API, services, données, workers, logs et livraison.</text>
+    <rect x="1264" y="54" width="244" height="38" rx="19" fill="#10261a" stroke="#238636"/>
+    <circle cx="1286" cy="73" r="6" fill="#3fb950"/>
+    <text x="1302" y="79" class="mono green" font-size="15" font-weight="800">status: production-minded</text>
   </g>
 
-  <g transform="translate(432 150)">
-    <rect width="330" height="290" fill="#111111" stroke="#111111" stroke-width="3"/>
-    <rect x="18" y="18" width="294" height="254" fill="#F2F0E7"/>
-    <text x="42" y="66" fill="#111111" class="mono" font-size="18" font-weight="900">STOCKER</text>
-    <rect x="42" y="88" width="138" height="5" fill="#9BFF00"/>
-    <text x="42" y="128" fill="#111111" class="sans" font-size="27" font-weight="900">PostgreSQL</text>
-    <text x="42" y="172" fill="#111111" class="sans" font-size="27" font-weight="900">SQLite</text>
-    <text x="42" y="216" fill="#111111" class="sans" font-size="27" font-weight="900">Redis</text>
-    <text x="42" y="246" fill="#111111" class="mono" font-size="15" font-weight="900">base solide + cache rapide</text>
+  <g transform="translate(62 178)" class="sans" filter="url(#shadow)">
+    <g>
+      <rect x="0" y="38" width="178" height="118" rx="10" class="panel"/>
+      <rect x="55" y="68" width="68" height="46" rx="6" fill="#0b1d2e" stroke="#1f6feb"/>
+      <rect x="68" y="122" width="42" height="7" rx="3" fill="#58a6ff"/>
+      <text x="35" y="178" class="soft" font-size="17" font-weight="800">Mobile / Web</text>
+      <text x="43" y="205" class="muted" font-size="14">client produit</text>
+    </g>
+
+    <path d="M204 98H300" class="edge"/>
+    <path d="M287 84l16 14l-16 14" class="edge" fill="none"/>
+
+    <g transform="translate(326 0)">
+      <rect x="0" y="20" width="230" height="156" rx="12" fill="#10233b" stroke="#1f6feb" stroke-width="2"/>
+      <text x="28" y="64" class="blue mono" font-size="18" font-weight="900">API GATEWAY</text>
+      <text x="28" y="102" class="soft" font-size="17">routes, validation, erreurs</text>
+      <text x="28" y="132" class="muted" font-size="14">OpenAPI / REST / WebSocket</text>
+      <rect x="28" y="148" width="92" height="28" rx="14" fill="#0b1d2e" stroke="#1f6feb"/>
+      <text x="48" y="167" class="blue mono" font-size="13" font-weight="800">entry</text>
+    </g>
+
+    <path d="M584 98H672" class="edge"/>
+    <path d="M659 84l16 14l-16 14" class="edge" fill="none"/>
+
+    <g transform="translate(698 0)">
+      <rect x="0" y="0" width="288" height="76" rx="10" class="panel"/>
+      <text x="54" y="46" class="text" font-size="18" font-weight="850">Auth Service</text>
+      <rect x="22" y="24" width="18" height="24" rx="4" fill="#1f6feb"/>
+      <path d="M27 24v-6c0-13 18-13 18 0v6" stroke="#58a6ff" stroke-width="3" fill="none"/>
+
+      <rect x="0" y="98" width="288" height="76" rx="10" class="panel"/>
+      <text x="54" y="144" class="text" font-size="18" font-weight="850">Domain Services</text>
+      <circle cx="31" cy="136" r="15" fill="#3fb950"/>
+      <path d="M23 136h16M31 128v16" stroke="#0d1117" stroke-width="3"/>
+
+      <rect x="0" y="196" width="288" height="76" rx="10" class="panel"/>
+      <text x="54" y="242" class="text" font-size="18" font-weight="850">Automation Worker</text>
+      <path d="M20 238l18-28h18l-18 28h20l-30 30l8-30z" fill="#bc8cff"/>
+    </g>
+
+    <path d="M1016 98H1100" class="edge"/>
+    <path d="M1087 84l16 14l-16 14" class="edge" fill="none"/>
+    <path d="M1016 234H1100" class="edge" opacity="0.65"/>
+    <path d="M1087 220l16 14l-16 14" class="edge" fill="none" opacity="0.65"/>
+
+    <g transform="translate(1128 0)">
+      <rect x="0" y="18" width="238" height="150" rx="12" class="panel"/>
+      <ellipse cx="119" cy="58" rx="70" ry="24" fill="#0b1d2e" stroke="#58a6ff" stroke-width="2"/>
+      <path d="M49 58v62c0 14 31 24 70 24s70-10 70-24V58" fill="#0b1d2e" stroke="#58a6ff" stroke-width="2"/>
+      <ellipse cx="119" cy="120" rx="70" ry="24" fill="#0b1d2e" stroke="#58a6ff" stroke-width="2"/>
+      <text x="62" y="195" class="soft" font-size="17" font-weight="850">PostgreSQL / Redis</text>
+      <text x="72" y="222" class="muted" font-size="14">schema, cache, files</text>
+
+      <rect x="0" y="222" width="238" height="76" rx="10" class="panel"/>
+      <path d="M28 258h182" stroke="#30363d" stroke-width="6" stroke-linecap="round"/>
+      <path d="M28 258h122" stroke="#3fb950" stroke-width="6" stroke-linecap="round"/>
+      <text x="28" y="282" class="green mono" font-size="14" font-weight="800">logs + metrics</text>
+    </g>
   </g>
 
-  <g transform="translate(806 150)">
-    <rect width="330" height="290" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
-    <text x="24" y="47" fill="#111111" class="mono" font-size="18" font-weight="900">FAIRE TOURNER</text>
-    <path d="M24 66H306" stroke="#111111" stroke-width="3"/>
-    <text x="24" y="114" fill="#111111" class="sans" font-size="27" font-weight="900">Workers</text>
-    <text x="24" y="158" fill="#111111" class="sans" font-size="27" font-weight="900">WebSocket</text>
-    <text x="24" y="202" fill="#111111" class="sans" font-size="27" font-weight="900">MQTT</text>
-    <rect x="24" y="228" width="236" height="38" fill="#9BFF00" stroke="#111111" stroke-width="3"/>
-    <text x="46" y="253" fill="#111111" class="mono" font-size="15" font-weight="900">temps reel + jobs</text>
+  <g transform="translate(62 500)" class="sans">
+    <rect x="0" y="0" width="1476" height="38" rx="7" fill="#010409" stroke="#30363d"/>
+    <text x="24" y="25" class="mono muted" font-size="14">idea</text>
+    <text x="182" y="25" class="mono blue" font-size="14">api</text>
+    <text x="342" y="25" class="mono green" font-size="14">auth</text>
+    <text x="502" y="25" class="mono orange" font-size="14">data</text>
+    <text x="662" y="25" class="mono purple" font-size="14">worker</text>
+    <text x="842" y="25" class="mono blue" font-size="14">realtime</text>
+    <text x="1042" y="25" class="mono green" font-size="14">tests</text>
+    <text x="1202" y="25" class="mono soft" font-size="14">docker</text>
+    <text x="1360" y="25" class="mono muted" font-size="14">ship</text>
   </g>
-
-  <g transform="translate(1180 150)">
-    <rect width="330" height="290" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
-    <rect x="0" y="0" width="330" height="48" fill="#111111"/>
-    <text x="24" y="31" fill="#9BFF00" class="mono" font-size="18" font-weight="900">LIVRER</text>
-    <text x="24" y="94" fill="#111111" class="sans" font-size="27" font-weight="900">Docker</text>
-    <text x="24" y="138" fill="#111111" class="sans" font-size="27" font-weight="900">CI/CD</text>
-    <text x="24" y="182" fill="#111111" class="sans" font-size="27" font-weight="900">Monitoring</text>
-    <text x="24" y="232" fill="#111111" class="mono" font-size="16" font-weight="900">deploy propre + suivi</text>
-  </g>
-
-  <rect x="58" y="480" width="1484" height="48" fill="#111111"/>
-  <text x="84" y="511" fill="#9BFF00" class="mono" font-size="18" font-weight="900">idee -> API -> base de donnees -> securite -> mobile/web -> deploiement</text>
 </svg>
