@@ -1,0 +1,100 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Confidential backend builds</title>
+  <desc id="desc">Anonymized case studies for private backend and mobile projects</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#080D19"/>
+      <stop offset="1" stop-color="#151C2E"/>
+    </linearGradient>
+    <style>
+      .mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}
+    </style>
+  </defs>
+  <rect width="1600" height="900" rx="30" fill="url(#bg)"/>
+  <path d="M70 142H1530M70 488H1530" stroke="#33415F" stroke-width="1"/>
+  <text x="70" y="76" fill="#F5F7FB" class="sans" font-size="46" font-weight="900">Confidential Backend Builds</text>
+  <text x="72" y="116" fill="#8EA4C8" class="sans" font-size="22">Private repositories, public technical signal: role, architecture, constraints and delivery scope.</text>
+
+  <g transform="translate(70 170)">
+    <rect width="345" height="250" rx="22" fill="#0B1222" stroke="#33415F"/>
+    <text x="26" y="45" fill="#FFB86B" class="mono" font-size="18" font-weight="900">MOBILITY API</text>
+    <text x="26" y="90" fill="#F5F7FB" class="sans" font-size="29" font-weight="900">Geospatial Platform</text>
+    <text x="26" y="126" fill="#C8D3E7" class="sans" font-size="18">Routing, maps, media storage and operational APIs.</text>
+    <text x="26" y="168" fill="#68D8EF" class="mono" font-size="17">FastAPI / PostGIS / Redis</text>
+    <text x="26" y="200" fill="#68D8EF" class="mono" font-size="17">MinIO-S3 / Prometheus</text>
+    <text x="26" y="229" fill="#8EA4C8" class="mono" font-size="15">source: private</text>
+  </g>
+
+  <g transform="translate(445 170)">
+    <rect width="345" height="250" rx="22" fill="#0B1222" stroke="#33415F"/>
+    <text x="26" y="45" fill="#FFB86B" class="mono" font-size="18" font-weight="900">AI COACHING API</text>
+    <text x="26" y="90" fill="#F5F7FB" class="sans" font-size="29" font-weight="900">RAG Assistant Core</text>
+    <text x="26" y="126" fill="#C8D3E7" class="sans" font-size="18">Conversational backend with retrieval and rate limits.</text>
+    <text x="26" y="168" fill="#68D8EF" class="mono" font-size="17">FastAPI / Supabase / Redis</text>
+    <text x="26" y="200" fill="#68D8EF" class="mono" font-size="17">ChromaDB / LLM Gateway</text>
+    <text x="26" y="229" fill="#8EA4C8" class="mono" font-size="15">source: private</text>
+  </g>
+
+  <g transform="translate(820 170)">
+    <rect width="345" height="250" rx="22" fill="#0B1222" stroke="#33415F"/>
+    <text x="26" y="45" fill="#FFB86B" class="mono" font-size="18" font-weight="900">SALES AUTOMATION</text>
+    <text x="26" y="90" fill="#F5F7FB" class="sans" font-size="29" font-weight="900">WhatsApp Ops Engine</text>
+    <text x="26" y="126" fill="#C8D3E7" class="sans" font-size="18">Desktop + backend engine for commercial workflows.</text>
+    <text x="26" y="168" fill="#68D8EF" class="mono" font-size="17">Electron / Express / SQLite</text>
+    <text x="26" y="200" fill="#68D8EF" class="mono" font-size="17">Socket.IO / Rust core</text>
+    <text x="26" y="229" fill="#8EA4C8" class="mono" font-size="15">logo: available, private</text>
+  </g>
+
+  <g transform="translate(1195 170)">
+    <rect width="335" height="250" rx="22" fill="#0B1222" stroke="#33415F"/>
+    <text x="26" y="45" fill="#FFB86B" class="mono" font-size="18" font-weight="900">MOBILE + AUTH</text>
+    <text x="26" y="90" fill="#F5F7FB" class="sans" font-size="29" font-weight="900">Field Finance App</text>
+    <text x="26" y="126" fill="#C8D3E7" class="sans" font-size="18">Mobile app, custom auth, backend and document flows.</text>
+    <text x="26" y="168" fill="#68D8EF" class="mono" font-size="17">Expo / Flutter / NestJS</text>
+    <text x="26" y="200" fill="#68D8EF" class="mono" font-size="17">Prisma / Postgres / OCR</text>
+    <text x="26" y="229" fill="#8EA4C8" class="mono" font-size="15">logo: local, private</text>
+  </g>
+
+  <g transform="translate(70 516)">
+    <rect width="345" height="250" rx="22" fill="#0B1222" stroke="#33415F"/>
+    <text x="26" y="45" fill="#FFB86B" class="mono" font-size="18" font-weight="900">SECRET SHARING</text>
+    <text x="26" y="90" fill="#F5F7FB" class="sans" font-size="29" font-weight="900">Zero-Knowledge Paste</text>
+    <text x="26" y="126" fill="#C8D3E7" class="sans" font-size="18">Self-destructing encrypted notes with TTL storage.</text>
+    <text x="26" y="168" fill="#68D8EF" class="mono" font-size="17">Nuxt / Web Crypto API</text>
+    <text x="26" y="200" fill="#68D8EF" class="mono" font-size="17">AES-GCM / Server routes</text>
+    <text x="26" y="229" fill="#8EA4C8" class="mono" font-size="15">logo: available, private</text>
+  </g>
+
+  <g transform="translate(445 516)">
+    <rect width="345" height="250" rx="22" fill="#0B1222" stroke="#33415F"/>
+    <text x="26" y="45" fill="#FFB86B" class="mono" font-size="18" font-weight="900">BACKEND IDE</text>
+    <text x="26" y="90" fill="#F5F7FB" class="sans" font-size="29" font-weight="900">Architecture Graph Tool</text>
+    <text x="26" y="126" fill="#C8D3E7" class="sans" font-size="18">Graph-first explorer for controllers, services and models.</text>
+    <text x="26" y="168" fill="#68D8EF" class="mono" font-size="17">Electron / TypeScript</text>
+    <text x="26" y="200" fill="#68D8EF" class="mono" font-size="17">ReactFlow / OpenAPI / PHP parser</text>
+    <text x="26" y="229" fill="#8EA4C8" class="mono" font-size="15">logo: available, private</text>
+  </g>
+
+  <g transform="translate(820 516)">
+    <rect width="345" height="250" rx="22" fill="#0B1222" stroke="#33415F"/>
+    <text x="26" y="45" fill="#FFB86B" class="mono" font-size="18" font-weight="900">IOT ENERGY API</text>
+    <text x="26" y="90" fill="#F5F7FB" class="sans" font-size="29" font-weight="900">Realtime Supervision</text>
+    <text x="26" y="126" fill="#C8D3E7" class="sans" font-size="18">MQTT ingestion, WebSocket channels and alert workflows.</text>
+    <text x="26" y="168" fill="#68D8EF" class="mono" font-size="17">FastAPI / MQTT / Redis</text>
+    <text x="26" y="200" fill="#68D8EF" class="mono" font-size="17">Postgres / Celery / Docker</text>
+    <text x="26" y="229" fill="#8EA4C8" class="mono" font-size="15">source: private</text>
+  </g>
+
+  <g transform="translate(1195 516)">
+    <rect width="335" height="250" rx="22" fill="#0B1222" stroke="#33415F"/>
+    <text x="26" y="45" fill="#FFB86B" class="mono" font-size="18" font-weight="900">AI PRODUCT OPS</text>
+    <text x="26" y="90" fill="#F5F7FB" class="sans" font-size="29" font-weight="900">Multi-Agent PRD System</text>
+    <text x="26" y="126" fill="#C8D3E7" class="sans" font-size="18">Agent orchestration, PRD generation and sharing flows.</text>
+    <text x="26" y="168" fill="#68D8EF" class="mono" font-size="17">Next.js / Supabase RLS</text>
+    <text x="26" y="200" fill="#68D8EF" class="mono" font-size="17">Groq / Gemini / Tavily</text>
+    <text x="26" y="229" fill="#8EA4C8" class="mono" font-size="15">favicon: available</text>
+  </g>
+
+  <rect x="70" y="808" width="1460" height="48" rx="14" fill="#101828" stroke="#33415F"/>
+  <text x="96" y="839" fill="#DDE6F7" class="mono" font-size="18">names, repositories, customer data and source code intentionally omitted from the public profile</text>
+</svg>

@@ -34,6 +34,24 @@
 
 ---
 
+## Confidential Backend Builds
+
+<div align="center">
+
+<img src="./assets/confidential-work.svg" width="100%" alt="Anonymized private backend and mobile projects"/>
+
+</div>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Source-Private%20%2F%20Client%20Confidential-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="Private source"/>
+  <img src="https://img.shields.io/badge/Focus-APIs%20%2B%20Mobile%20%2B%20Automation-FFB86B?style=for-the-badge&logo=serverless&logoColor=101828" alt="Backend focus"/>
+  <img src="https://img.shields.io/badge/Delivery-Docker%20%2B%20Auth%20%2B%20Data-68D8EF?style=for-the-badge&logo=docker&logoColor=101828" alt="Delivery stack"/>
+</p>
+
+> Private repositories and client code stay private. These case studies expose only role, architecture and technical scope.
+
+---
+
 ## Backend Projects
 
 <table>
@@ -52,36 +70,6 @@
   <img src="https://img.shields.io/badge/Rust-Axum%20%2B%20Tokio-FFB86B?style=for-the-badge&logo=rust&logoColor=101828" alt="Rust Axum Tokio"/>
   <img src="https://img.shields.io/badge/Node-Express%20%2B%20Prisma-68D8EF?style=for-the-badge&logo=nodedotjs&logoColor=101828" alt="Express Prisma"/>
   <img src="https://img.shields.io/badge/Go-Worker%20Service-79D4FF?style=for-the-badge&logo=go&logoColor=101828" alt="Go worker service"/>
-</p>
-
-<table>
-  <tr>
-    <td width="130" align="center"><strong>API</strong><br/><sub>no public logo</sub></td>
-    <td>
-      <a href="https://github.com/thelabofferdi/roomio"><img src="./assets/projects/roomio.svg" width="100%" alt="Roomio backend card"/></a>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <a href="https://github.com/thelabofferdi/roomio"><img src="https://img.shields.io/badge/Code-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="Roomio code"/></a>
-  <img src="https://img.shields.io/badge/Python-FastAPI%20%2B%20SQLAlchemy-FFB86B?style=for-the-badge&logo=python&logoColor=101828" alt="FastAPI SQLAlchemy"/>
-  <img src="https://img.shields.io/badge/Postgres-AsyncPG%20%2B%20Alembic-68D8EF?style=for-the-badge&logo=postgresql&logoColor=101828" alt="Postgres Alembic"/>
-</p>
-
-<table>
-  <tr>
-    <td width="130" align="center"><strong>API</strong><br/><sub>no public logo</sub></td>
-    <td>
-      <a href="https://github.com/thelabofferdi/gainova-backend"><img src="./assets/projects/gainova-backend.svg" width="100%" alt="Gainova backend card"/></a>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-  <a href="https://github.com/thelabofferdi/gainova-backend"><img src="https://img.shields.io/badge/Code-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="Gainova backend code"/></a>
-  <img src="https://img.shields.io/badge/Fastify-TypeScript%20API-FFB86B?style=for-the-badge&logo=fastify&logoColor=101828" alt="Fastify TypeScript"/>
-  <img src="https://img.shields.io/badge/Infra-Redis%20%2B%20Supabase%20%2B%20PM2-68D8EF?style=for-the-badge&logo=redis&logoColor=101828" alt="Redis Supabase PM2"/>
 </p>
 
 <table>
@@ -136,19 +124,14 @@
   <img src="https://img.shields.io/badge/Local%20Data-sql.js-68D8EF?style=for-the-badge&logo=sqlite&logoColor=101828" alt="sql.js"/>
 </p>
 
-<table>
-  <tr>
-    <td width="130" align="center"><strong>API</strong><br/><sub>no public logo</sub></td>
-    <td>
-      <a href="https://github.com/thelabofferdi/sppeech"><img src="./assets/projects/sppeech.svg" width="100%" alt="Sppeech backend card"/></a>
-    </td>
-  </tr>
-</table>
+<a href="https://github.com/Yug-Su/biology_space">
+  <img src="./assets/projects/biology-space.svg" width="100%" alt="SpaceBio AI research platform card"/>
+</a>
 
 <p align="center">
-  <a href="https://github.com/thelabofferdi/sppeech"><img src="https://img.shields.io/badge/Code-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="Sppeech code"/></a>
-  <img src="https://img.shields.io/badge/Runtime-Express%20%2B%20TypeScript-FFB86B?style=for-the-badge&logo=express&logoColor=101828" alt="Express TypeScript"/>
-  <img src="https://img.shields.io/badge/AI-Google%20GenAI-68D8EF?style=for-the-badge&logo=google&logoColor=101828" alt="Google GenAI"/>
+  <a href="https://github.com/Yug-Su/biology_space"><img src="https://img.shields.io/badge/Code-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="biology_space code"/></a>
+  <img src="https://img.shields.io/badge/Django-5.0%20%2B%20SQLite-FFB86B?style=for-the-badge&logo=django&logoColor=101828" alt="Django SQLite"/>
+  <img src="https://img.shields.io/badge/AI-OpenRouter%20%2B%20Groq-68D8EF?style=for-the-badge&logo=openai&logoColor=101828" alt="OpenRouter Groq"/>
 </p>
 
 ---

@@ -1,0 +1,26 @@
+<svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">SpaceBio AI research platform card</title>
+  <desc id="desc">Public project card for biology_space</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1600" y2="300" gradientUnits="userSpaceOnUse"><stop stop-color="#080D19"/><stop offset="1" stop-color="#1A2338"/></linearGradient></defs>
+  <rect width="1600" height="300" rx="30" fill="url(#bg)"/>
+  <rect x="44" y="36" width="1512" height="228" rx="24" fill="#0B1222" stroke="#33415F"/>
+  <text x="82" y="91" fill="#68D8EF" font-family="JetBrains Mono, Consolas, monospace" font-size="20" font-weight="900">/public/biology_space</text>
+  <text x="82" y="153" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="900">SpaceBio AI</text>
+  <text x="82" y="198" fill="#C8D3E7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">AI research platform for NASA space biology publications with search, chat and article generation.</text>
+  <g transform="translate(82 220)">
+    <rect x="0" y="0" width="126" height="38" rx="10" fill="#FFB86B" fill-opacity="0.14" stroke="#FFB86B" stroke-opacity="0.48"/>
+    <text x="22" y="25" fill="#FFE5C4" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">Django 5</text>
+    <rect x="142" y="0" width="118" height="38" rx="10" fill="#68D8EF" fill-opacity="0.12" stroke="#68D8EF" stroke-opacity="0.45"/>
+    <text x="165" y="25" fill="#D8F8FF" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">SQLite</text>
+    <rect x="276" y="0" width="164" height="38" rx="10" fill="#A78BFA" fill-opacity="0.12" stroke="#A78BFA" stroke-opacity="0.45"/>
+    <text x="302" y="25" fill="#E8DDFF" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">OpenRouter</text>
+    <rect x="456" y="0" width="120" height="38" rx="10" fill="#253047" stroke="#FFB86B" stroke-opacity="0.32"/>
+    <text x="482" y="25" fill="#F5F7FB" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">Groq</text>
+  </g>
+  <g transform="translate(1210 72)">
+    <rect x="0" y="0" width="260" height="152" rx="24" fill="#101828" stroke="#68D8EF" stroke-opacity="0.38"/>
+    <text x="34" y="53" fill="#68D8EF" font-family="JetBrains Mono, Consolas, monospace" font-size="18" font-weight="900">NASA DATA</text>
+    <text x="34" y="90" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900">572 Articles</text>
+    <text x="34" y="123" fill="#8EA4C8" font-family="JetBrains Mono, Consolas, monospace" font-size="16">search -> chat -> generate</text>
+  </g>
+</svg>
