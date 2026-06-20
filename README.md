@@ -4,11 +4,11 @@
 
 <div align="center">
 
-[![Backend](https://img.shields.io/badge/Backend--First-Developer-FFB86B?style=for-the-badge&logo=serverless&logoColor=101828)](https://github.com/thelabofferdi)
-[![APIs](https://img.shields.io/badge/APIs-FastAPI%20%7C%20Fastify%20%7C%20Express-68D8EF?style=for-the-badge&logo=fastapi&logoColor=101828)](https://github.com/thelabofferdi?tab=repositories)
-[![Systems](https://img.shields.io/badge/Systems-Rust%20%7C%20Go%20%7C%20Node-151C2E?style=for-the-badge&logo=rust&logoColor=FFB86B)](https://github.com/thelabofferdi?tab=repositories)
-[![Data](https://img.shields.io/badge/Data-Postgres%20%7C%20SQLite%20%7C%20Redis-253047?style=for-the-badge&logo=postgresql&logoColor=68D8EF)](https://github.com/thelabofferdi?tab=repositories)
-[![Visitors](https://komarev.com/ghpvc/?username=thelabofferdi&label=Profile%20Views&color=FFB86B&style=for-the-badge)](https://github.com/thelabofferdi)
+[![Backend](https://img.shields.io/badge/Backend--First-Developer-111111?style=for-the-badge&logo=serverless&logoColor=9BFF00)](https://github.com/thelabofferdi)
+[![APIs](https://img.shields.io/badge/APIs-FastAPI%20%7C%20Fastify%20%7C%20Express-9BFF00?style=for-the-badge&logo=fastapi&logoColor=111111)](https://github.com/thelabofferdi?tab=repositories)
+[![Systems](https://img.shields.io/badge/Systems-Rust%20%7C%20Go%20%7C%20Node-111111?style=for-the-badge&logo=rust&logoColor=9BFF00)](https://github.com/thelabofferdi?tab=repositories)
+[![Data](https://img.shields.io/badge/Data-Postgres%20%7C%20SQLite%20%7C%20Redis-F2F0E7?style=for-the-badge&logo=postgresql&logoColor=111111)](https://github.com/thelabofferdi?tab=repositories)
+[![Visitors](https://komarev.com/ghpvc/?username=thelabofferdi&label=Profile%20Views&color=9BFF00&style=for-the-badge)](https://github.com/thelabofferdi)
 
 </div>
 
@@ -43,9 +43,9 @@
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Source-Private%20%2F%20Client%20Confidential-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="Private source"/>
-  <img src="https://img.shields.io/badge/Focus-APIs%20%2B%20Mobile%20%2B%20Automation-FFB86B?style=for-the-badge&logo=serverless&logoColor=101828" alt="Backend focus"/>
-  <img src="https://img.shields.io/badge/Delivery-Docker%20%2B%20Auth%20%2B%20Data-68D8EF?style=for-the-badge&logo=docker&logoColor=101828" alt="Delivery stack"/>
+  <img src="https://img.shields.io/badge/Source-Private%20%2F%20Client%20Confidential-111111?style=for-the-badge&logo=github&logoColor=9BFF00" alt="Private source"/>
+  <img src="https://img.shields.io/badge/Focus-APIs%20%2B%20Mobile%20%2B%20Automation-9BFF00?style=for-the-badge&logo=serverless&logoColor=111111" alt="Backend focus"/>
+  <img src="https://img.shields.io/badge/Delivery-Docker%20%2B%20Auth%20%2B%20Data-F2F0E7?style=for-the-badge&logo=docker&logoColor=111111" alt="Delivery stack"/>
 </p>
 
 > Private repositories and client code stay private. These case studies expose only role, architecture and technical scope.
@@ -66,10 +66,10 @@
 </table>
 
 <p align="center">
-  <a href="https://github.com/thelabofferdi/SellBulk"><img src="https://img.shields.io/badge/Code-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="SellBulk code"/></a>
-  <img src="https://img.shields.io/badge/Rust-Axum%20%2B%20Tokio-FFB86B?style=for-the-badge&logo=rust&logoColor=101828" alt="Rust Axum Tokio"/>
-  <img src="https://img.shields.io/badge/Node-Express%20%2B%20Prisma-68D8EF?style=for-the-badge&logo=nodedotjs&logoColor=101828" alt="Express Prisma"/>
-  <img src="https://img.shields.io/badge/Go-Worker%20Service-79D4FF?style=for-the-badge&logo=go&logoColor=101828" alt="Go worker service"/>
+  <a href="https://github.com/thelabofferdi/SellBulk"><img src="https://img.shields.io/badge/Code-111111?style=for-the-badge&logo=github&logoColor=9BFF00" alt="SellBulk code"/></a>
+  <img src="https://img.shields.io/badge/Rust-Axum%20%2B%20Tokio-9BFF00?style=for-the-badge&logo=rust&logoColor=111111" alt="Rust Axum Tokio"/>
+  <img src="https://img.shields.io/badge/Node-Express%20%2B%20Prisma-F2F0E7?style=for-the-badge&logo=nodedotjs&logoColor=111111" alt="Express Prisma"/>
+  <img src="https://img.shields.io/badge/Go-Worker%20Service-111111?style=for-the-badge&logo=go&logoColor=9BFF00" alt="Go worker service"/>
 </p>
 
 <table>
@@ -84,10 +84,10 @@
 </table>
 
 <p align="center">
-  <a href="https://github.com/thelabofferdi/whatautosysv3"><img src="https://img.shields.io/badge/v3-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="WhatAutoSys v3 code"/></a>
-  <a href="https://github.com/thelabofferdi/whatautosysv1"><img src="https://img.shields.io/badge/v1-253047?style=for-the-badge&logo=github&logoColor=68D8EF" alt="WhatAutoSys v1 code"/></a>
-  <img src="https://img.shields.io/badge/Backend-Express%20%2B%20Socket.IO-FFB86B?style=for-the-badge&logo=express&logoColor=101828" alt="Express Socket.IO"/>
-  <img src="https://img.shields.io/badge/Data-better--sqlite3-68D8EF?style=for-the-badge&logo=sqlite&logoColor=101828" alt="better-sqlite3"/>
+  <a href="https://github.com/thelabofferdi/whatautosysv3"><img src="https://img.shields.io/badge/v3-111111?style=for-the-badge&logo=github&logoColor=9BFF00" alt="WhatAutoSys v3 code"/></a>
+  <a href="https://github.com/thelabofferdi/whatautosysv1"><img src="https://img.shields.io/badge/v1-F2F0E7?style=for-the-badge&logo=github&logoColor=111111" alt="WhatAutoSys v1 code"/></a>
+  <img src="https://img.shields.io/badge/Backend-Express%20%2B%20Socket.IO-9BFF00?style=for-the-badge&logo=express&logoColor=111111" alt="Express Socket.IO"/>
+  <img src="https://img.shields.io/badge/Data-better--sqlite3-111111?style=for-the-badge&logo=sqlite&logoColor=9BFF00" alt="better-sqlite3"/>
 </p>
 
 <table>
@@ -102,9 +102,9 @@
 </table>
 
 <p align="center">
-  <a href="https://github.com/thelabofferdi/GhostPoll"><img src="https://img.shields.io/badge/Code-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="GhostPoll code"/></a>
-  <img src="https://img.shields.io/badge/Nuxt-TypeScript%20Server%20App-FFB86B?style=for-the-badge&logo=nuxtdotjs&logoColor=101828" alt="Nuxt TypeScript server app"/>
-  <img src="https://img.shields.io/badge/IDs-NanoID%20%2B%20QR-68D8EF?style=for-the-badge&logo=qrcode&logoColor=101828" alt="NanoID QR"/>
+  <a href="https://github.com/thelabofferdi/GhostPoll"><img src="https://img.shields.io/badge/Code-111111?style=for-the-badge&logo=github&logoColor=9BFF00" alt="GhostPoll code"/></a>
+  <img src="https://img.shields.io/badge/Nuxt-TypeScript%20Server%20App-9BFF00?style=for-the-badge&logo=nuxtdotjs&logoColor=111111" alt="Nuxt TypeScript server app"/>
+  <img src="https://img.shields.io/badge/IDs-NanoID%20%2B%20QR-F2F0E7?style=for-the-badge&logo=qrcode&logoColor=111111" alt="NanoID QR"/>
 </p>
 
 <table>
@@ -119,9 +119,9 @@
 </table>
 
 <p align="center">
-  <a href="https://github.com/thelabofferdi/clipintelli"><img src="https://img.shields.io/badge/Code-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="ClipIntelli code"/></a>
-  <img src="https://img.shields.io/badge/Desktop-Electron%20Main-FFB86B?style=for-the-badge&logo=electron&logoColor=101828" alt="Electron main"/>
-  <img src="https://img.shields.io/badge/Local%20Data-sql.js-68D8EF?style=for-the-badge&logo=sqlite&logoColor=101828" alt="sql.js"/>
+  <a href="https://github.com/thelabofferdi/clipintelli"><img src="https://img.shields.io/badge/Code-111111?style=for-the-badge&logo=github&logoColor=9BFF00" alt="ClipIntelli code"/></a>
+  <img src="https://img.shields.io/badge/Desktop-Electron%20Main-9BFF00?style=for-the-badge&logo=electron&logoColor=111111" alt="Electron main"/>
+  <img src="https://img.shields.io/badge/Local%20Data-sql.js-F2F0E7?style=for-the-badge&logo=sqlite&logoColor=111111" alt="sql.js"/>
 </p>
 
 <a href="https://github.com/Yug-Su/biology_space">
@@ -129,9 +129,9 @@
 </a>
 
 <p align="center">
-  <a href="https://github.com/Yug-Su/biology_space"><img src="https://img.shields.io/badge/Code-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="biology_space code"/></a>
-  <img src="https://img.shields.io/badge/Django-5.0%20%2B%20SQLite-FFB86B?style=for-the-badge&logo=django&logoColor=101828" alt="Django SQLite"/>
-  <img src="https://img.shields.io/badge/AI-OpenRouter%20%2B%20Groq-68D8EF?style=for-the-badge&logo=openai&logoColor=101828" alt="OpenRouter Groq"/>
+  <a href="https://github.com/Yug-Su/biology_space"><img src="https://img.shields.io/badge/Code-111111?style=for-the-badge&logo=github&logoColor=9BFF00" alt="biology_space code"/></a>
+  <img src="https://img.shields.io/badge/Django-5.0%20%2B%20SQLite-9BFF00?style=for-the-badge&logo=django&logoColor=111111" alt="Django SQLite"/>
+  <img src="https://img.shields.io/badge/AI-OpenRouter%20%2B%20Groq-F2F0E7?style=for-the-badge&logo=openai&logoColor=111111" alt="OpenRouter Groq"/>
 </p>
 
 ---
@@ -140,12 +140,12 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=thelabofferdi&show_icons=true&hide_border=true&bg_color=101828&title_color=FFB86B&text_color=F5F7FB&icon_color=68D8EF" alt="GitHub stats"/>
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thelabofferdi&layout=compact&hide_border=true&bg_color=101828&title_color=FFB86B&text_color=F5F7FB" alt="Top languages"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=thelabofferdi&show_icons=true&hide_border=true&bg_color=F2F0E7&title_color=111111&text_color=111111&icon_color=9BFF00" alt="GitHub stats"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thelabofferdi&layout=compact&hide_border=true&bg_color=F2F0E7&title_color=111111&text_color=111111" alt="Top languages"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=thelabofferdi&theme=dark&hide_border=true&background=101828&ring=FFB86B&fire=68D8EF&currStreakLabel=FFB86B" alt="GitHub streak"/>
+<img src="https://streak-stats.demolab.com?user=thelabofferdi&theme=dark&hide_border=true&background=111111&ring=9BFF00&fire=9BFF00&currStreakLabel=9BFF00" alt="GitHub streak"/>
 
 </div>
 
@@ -166,10 +166,10 @@
 <div align="center">
 
 <a href="https://github.com/thelabofferdi">
-  <img src="https://img.shields.io/badge/GitHub-thelabofferdi-151C2E?style=for-the-badge&logo=github&logoColor=FFB86B" alt="GitHub"/>
+  <img src="https://img.shields.io/badge/GitHub-thelabofferdi-111111?style=for-the-badge&logo=github&logoColor=9BFF00" alt="GitHub"/>
 </a>
 <a href="https://github.com/thelabofferdi?tab=repositories">
-  <img src="https://img.shields.io/badge/Repositories-Backend%20Lab-253047?style=for-the-badge&logo=githubactions&logoColor=68D8EF" alt="Repositories"/>
+  <img src="https://img.shields.io/badge/Repositories-Backend%20Lab-9BFF00?style=for-the-badge&logo=githubactions&logoColor=111111" alt="Repositories"/>
 </a>
 
 </div>

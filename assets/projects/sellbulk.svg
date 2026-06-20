@@ -1,31 +1,21 @@
 <svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">SellBulk backend architecture card</title>
-  <desc id="desc">Backend-focused project card for SellBulk</desc>
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="300" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#080D19"/>
-      <stop offset="1" stop-color="#1A2338"/>
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="300" rx="30" fill="url(#bg)"/>
-  <rect x="44" y="36" width="1512" height="228" rx="24" fill="#0B1222" stroke="#33415F"/>
-  <text x="82" y="91" fill="#68D8EF" font-family="JetBrains Mono, Consolas, monospace" font-size="20" font-weight="900">/backend/sellbulk</text>
-  <text x="82" y="153" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="54" font-weight="900">SellBulk / Sellify</text>
-  <text x="82" y="198" fill="#C8D3E7" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24">Deterministic WhatsApp automation backend with core engine, workers and API services.</text>
-  <g transform="translate(82 220)">
-    <rect x="0" y="0" width="148" height="38" rx="10" fill="#FFB86B" fill-opacity="0.14" stroke="#FFB86B" stroke-opacity="0.48"/>
-    <text x="22" y="25" fill="#FFE5C4" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">Rust Axum</text>
-    <rect x="164" y="0" width="162" height="38" rx="10" fill="#68D8EF" fill-opacity="0.12" stroke="#68D8EF" stroke-opacity="0.45"/>
-    <text x="187" y="25" fill="#D8F8FF" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">Express API</text>
-    <rect x="342" y="0" width="122" height="38" rx="10" fill="#A78BFA" fill-opacity="0.12" stroke="#A78BFA" stroke-opacity="0.45"/>
-    <text x="371" y="25" fill="#E8DDFF" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">Go worker</text>
-    <rect x="480" y="0" width="180" height="38" rx="10" fill="#253047" stroke="#FFB86B" stroke-opacity="0.32"/>
-    <text x="505" y="25" fill="#F5F7FB" font-family="JetBrains Mono, Consolas, monospace" font-size="15" font-weight="800">Docker + Prometheus</text>
-  </g>
-  <g transform="translate(1210 72)">
-    <rect x="0" y="0" width="260" height="152" rx="24" fill="#101828" stroke="#FFB86B" stroke-opacity="0.38"/>
-    <text x="34" y="53" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="18" font-weight="900">CORE</text>
-    <text x="34" y="90" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="28" font-weight="900">11 Engines</text>
-    <text x="34" y="123" fill="#8EA4C8" font-family="JetBrains Mono, Consolas, monospace" font-size="16">queue -> api -> metrics</text>
-  </g>
+  <title id="title">SellBulk brutalist backend card</title>
+  <desc id="desc">Public project card for SellBulk in black white and green</desc>
+  <defs><style>.mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}</style></defs>
+  <rect width="1600" height="300" fill="#F2F0E7"/>
+  <rect x="24" y="24" width="1552" height="252" fill="none" stroke="#111111" stroke-width="4"/>
+  <rect x="54" y="54" width="370" height="192" fill="#111111"/>
+  <text x="82" y="101" fill="#9BFF00" class="mono" font-size="20" font-weight="900">PUBLIC // BACKEND</text>
+  <text x="82" y="166" fill="#F2F0E7" class="sans" font-size="54" font-weight="1000">SellBulk</text>
+  <text x="82" y="207" fill="#F2F0E7" class="mono" font-size="16" font-weight="800">sales automation engine</text>
+  <rect x="460" y="54" width="760" height="192" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
+  <text x="496" y="102" fill="#111111" class="sans" font-size="30" font-weight="1000">WhatsApp automation backend with deterministic core services.</text>
+  <text x="496" y="150" fill="#111111" class="mono" font-size="19" font-weight="900">Rust Axum + Tokio / Express API / Go worker</text>
+  <text x="496" y="190" fill="#111111" class="mono" font-size="19" font-weight="900">Docker / Prometheus / queues / realtime ops</text>
+  <rect x="496" y="210" width="206" height="26" fill="#9BFF00"/>
+  <text x="1270" y="106" fill="#111111" class="mono" font-size="18" font-weight="900">CORE</text>
+  <text x="1270" y="156" fill="#111111" class="sans" font-size="52" font-weight="1000">11</text>
+  <text x="1338" y="156" fill="#111111" class="sans" font-size="26" font-weight="1000">ENGINES</text>
+  <path d="M1270 188H1486" stroke="#111111" stroke-width="4"/>
+  <text x="1270" y="224" fill="#111111" class="mono" font-size="16" font-weight="900">queue -> api -> metrics</text>
 </svg>

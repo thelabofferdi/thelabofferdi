@@ -1,47 +1,60 @@
 <svg width="1600" height="580" viewBox="0 0 1600 580" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Backend stack map</title>
-  <desc id="desc">Backend technologies grouped by runtime, data, automation and operations</desc>
+  <title id="title">Backend stack brutalist map</title>
+  <desc id="desc">Backend stack map in black white and signal green</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="580" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#080D19"/>
-      <stop offset="1" stop-color="#151C2E"/>
-    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#111111" stroke-opacity="0.08"/>
+    </pattern>
+    <style>.mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}</style>
   </defs>
-  <rect width="1600" height="580" rx="30" fill="url(#bg)"/>
-  <path d="M72 150H1528M72 290H1528M72 430H1528" stroke="#33415F" stroke-width="1"/>
-  <path d="M400 130V490M800 130V490M1200 130V490" stroke="#33415F" stroke-width="1"/>
-  <text x="72" y="84" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="46" font-weight="900">Backend Stack Map</text>
-  <text x="74" y="124" fill="#8EA4C8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22">The tools I use to build stable APIs, service cores, workers and data-heavy products.</text>
+  <rect width="1600" height="580" fill="#F2F0E7"/>
+  <rect width="1600" height="580" fill="url(#grid)"/>
+  <rect x="24" y="24" width="1552" height="532" fill="none" stroke="#111111" stroke-width="4"/>
+  <rect x="58" y="54" width="1484" height="62" fill="#111111"/>
+  <text x="84" y="94" fill="#F2F0E7" class="sans" font-size="38" font-weight="1000">BACKEND STACK MAP</text>
+  <text x="1202" y="94" fill="#9BFF00" class="mono" font-size="18" font-weight="900">CONTRACT / DATA / OPS</text>
 
-  <g transform="translate(72 178)">
-    <text x="0" y="0" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="900">API RUNTIMES</text>
-    <text x="0" y="54" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">FastAPI</text>
-    <text x="0" y="94" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Fastify</text>
-    <text x="0" y="134" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Express</text>
-    <text x="0" y="174" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Axum</text>
-  </g>
-  <g transform="translate(470 178)">
-    <text x="0" y="0" fill="#68D8EF" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="900">DATA LAYERS</text>
-    <text x="0" y="54" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">PostgreSQL</text>
-    <text x="0" y="94" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">SQLite</text>
-    <text x="0" y="134" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Redis</text>
-    <text x="0" y="174" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Supabase</text>
-  </g>
-  <g transform="translate(870 178)">
-    <text x="0" y="0" fill="#A78BFA" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="900">ENGINES</text>
-    <text x="0" y="54" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Rust / Tokio</text>
-    <text x="0" y="94" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Go workers</text>
-    <text x="0" y="134" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">WebSockets</text>
-    <text x="0" y="174" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Automation</text>
-  </g>
-  <g transform="translate(1260 178)">
-    <text x="0" y="0" fill="#FFB86B" font-family="JetBrains Mono, Consolas, monospace" font-size="22" font-weight="900">OPS</text>
-    <text x="0" y="54" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Docker</text>
-    <text x="0" y="94" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">CI/CD</text>
-    <text x="0" y="134" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">PM2</text>
-    <text x="0" y="174" fill="#F5F7FB" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="800">Prometheus</text>
+  <g transform="translate(58 150)">
+    <rect width="330" height="290" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
+    <rect x="0" y="0" width="330" height="48" fill="#9BFF00" stroke="#111111" stroke-width="3"/>
+    <text x="24" y="31" fill="#111111" class="mono" font-size="18" font-weight="900">API RUNTIMES</text>
+    <text x="26" y="94" fill="#111111" class="sans" font-size="28" font-weight="900">FastAPI</text>
+    <text x="26" y="140" fill="#111111" class="sans" font-size="28" font-weight="900">NestJS</text>
+    <text x="26" y="186" fill="#111111" class="sans" font-size="28" font-weight="900">Express</text>
+    <text x="26" y="232" fill="#111111" class="sans" font-size="28" font-weight="900">Axum</text>
   </g>
 
-  <rect x="72" y="500" width="1456" height="44" rx="12" fill="#101828" stroke="#33415F"/>
-  <text x="96" y="529" fill="#DDE6F7" font-family="JetBrains Mono, Consolas, monospace" font-size="18">contract -> validation -> auth -> persistence -> workers -> metrics -> deployment</text>
+  <g transform="translate(432 150)">
+    <rect width="330" height="290" fill="#111111" stroke="#111111" stroke-width="3"/>
+    <rect x="18" y="18" width="294" height="254" fill="#F2F0E7"/>
+    <text x="42" y="66" fill="#111111" class="mono" font-size="18" font-weight="900">DATA LAYERS</text>
+    <rect x="42" y="88" width="182" height="5" fill="#9BFF00"/>
+    <text x="42" y="128" fill="#111111" class="sans" font-size="27" font-weight="900">PostgreSQL</text>
+    <text x="42" y="172" fill="#111111" class="sans" font-size="27" font-weight="900">SQLite</text>
+    <text x="42" y="216" fill="#111111" class="sans" font-size="27" font-weight="900">Redis / Supabase</text>
+  </g>
+
+  <g transform="translate(806 150)">
+    <rect width="330" height="290" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
+    <text x="24" y="47" fill="#111111" class="mono" font-size="18" font-weight="900">ENGINES</text>
+    <path d="M24 66H306" stroke="#111111" stroke-width="3"/>
+    <text x="24" y="114" fill="#111111" class="sans" font-size="27" font-weight="900">Rust / Tokio</text>
+    <text x="24" y="158" fill="#111111" class="sans" font-size="27" font-weight="900">Go workers</text>
+    <text x="24" y="202" fill="#111111" class="sans" font-size="27" font-weight="900">MQTT / WebSocket</text>
+    <rect x="24" y="228" width="180" height="38" fill="#9BFF00" stroke="#111111" stroke-width="3"/>
+    <text x="46" y="253" fill="#111111" class="mono" font-size="15" font-weight="900">AUTOMATION</text>
+  </g>
+
+  <g transform="translate(1180 150)">
+    <rect width="330" height="290" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
+    <rect x="0" y="0" width="330" height="48" fill="#111111"/>
+    <text x="24" y="31" fill="#9BFF00" class="mono" font-size="18" font-weight="900">OPS</text>
+    <text x="24" y="94" fill="#111111" class="sans" font-size="27" font-weight="900">Docker</text>
+    <text x="24" y="138" fill="#111111" class="sans" font-size="27" font-weight="900">CI/CD</text>
+    <text x="24" y="182" fill="#111111" class="sans" font-size="27" font-weight="900">Prometheus</text>
+    <text x="24" y="226" fill="#111111" class="sans" font-size="27" font-weight="900">PM2 / Cloud</text>
+  </g>
+
+  <rect x="58" y="480" width="1484" height="48" fill="#111111"/>
+  <text x="84" y="511" fill="#9BFF00" class="mono" font-size="18" font-weight="900">request -> validation -> auth -> persistence -> worker -> metrics -> deploy</text>
 </svg>
