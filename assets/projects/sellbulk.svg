@@ -1,21 +1,21 @@
 <svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">SellBulk brutalist backend card</title>
-  <desc id="desc">Public project card for SellBulk in black white and green</desc>
+  <title id="title">Carte projet SellBulk</title>
+  <desc id="desc">Carte projet SellBulk en francais</desc>
   <defs><style>.mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}</style></defs>
   <rect width="1600" height="300" fill="#F2F0E7"/>
   <rect x="24" y="24" width="1552" height="252" fill="none" stroke="#111111" stroke-width="4"/>
   <rect x="54" y="54" width="370" height="192" fill="#111111"/>
-  <text x="82" y="101" fill="#9BFF00" class="mono" font-size="20" font-weight="900">PUBLIC // BACKEND</text>
+  <text x="82" y="101" fill="#9BFF00" class="mono" font-size="20" font-weight="900">PUBLIC // SERVEUR</text>
   <text x="82" y="166" fill="#F2F0E7" class="sans" font-size="54" font-weight="1000">SellBulk</text>
-  <text x="82" y="207" fill="#F2F0E7" class="mono" font-size="16" font-weight="800">sales automation engine</text>
+  <text x="82" y="207" fill="#F2F0E7" class="mono" font-size="16" font-weight="800">automatisation commerciale</text>
   <rect x="460" y="54" width="760" height="192" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
-  <text x="496" y="102" fill="#111111" class="sans" font-size="30" font-weight="1000">WhatsApp automation backend with deterministic core services.</text>
-  <text x="496" y="150" fill="#111111" class="mono" font-size="19" font-weight="900">Rust Axum + Tokio / Express API / Go worker</text>
-  <text x="496" y="190" fill="#111111" class="mono" font-size="19" font-weight="900">Docker / Prometheus / queues / realtime ops</text>
+  <text x="496" y="102" fill="#111111" class="sans" font-size="30" font-weight="1000">Automatiser des ventes WhatsApp avec un backend robuste.</text>
+  <text x="496" y="150" fill="#111111" class="mono" font-size="19" font-weight="900">Rust = moteur rapide / Node = API facile a brancher</text>
+  <text x="496" y="190" fill="#111111" class="mono" font-size="19" font-weight="900">Docker = livraison propre / Prometheus = suivi</text>
   <rect x="496" y="210" width="206" height="26" fill="#9BFF00"/>
-  <text x="1270" y="106" fill="#111111" class="mono" font-size="18" font-weight="900">CORE</text>
+  <text x="1270" y="106" fill="#111111" class="mono" font-size="18" font-weight="900">COEUR</text>
   <text x="1270" y="156" fill="#111111" class="sans" font-size="52" font-weight="1000">11</text>
-  <text x="1338" y="156" fill="#111111" class="sans" font-size="26" font-weight="1000">ENGINES</text>
+  <text x="1338" y="156" fill="#111111" class="sans" font-size="26" font-weight="1000">MOTEURS</text>
   <path d="M1270 188H1486" stroke="#111111" stroke-width="4"/>
-  <text x="1270" y="224" fill="#111111" class="mono" font-size="16" font-weight="900">queue -> api -> metrics</text>
+  <text x="1270" y="224" fill="#111111" class="mono" font-size="16" font-weight="900">messages -> API -> stats</text>
 </svg>

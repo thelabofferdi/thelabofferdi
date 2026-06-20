@@ -1,20 +1,20 @@
 <svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">GhostPoll brutalist backend card</title>
-  <desc id="desc">Public project card for GhostPoll in black white and green</desc>
+  <title id="title">Carte projet GhostPoll</title>
+  <desc id="desc">Carte projet GhostPoll en francais</desc>
   <defs><style>.mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}</style></defs>
   <rect width="1600" height="300" fill="#F2F0E7"/>
   <rect x="24" y="24" width="1552" height="252" fill="none" stroke="#111111" stroke-width="4"/>
   <rect x="54" y="54" width="398" height="192" fill="#111111"/>
-  <text x="82" y="101" fill="#9BFF00" class="mono" font-size="20" font-weight="900">EPHEMERAL // PRIVACY</text>
+  <text x="82" y="101" fill="#9BFF00" class="mono" font-size="20" font-weight="900">SONDAGE // PRIVE</text>
   <text x="82" y="166" fill="#F2F0E7" class="sans" font-size="54" font-weight="1000">GhostPoll</text>
-  <text x="82" y="207" fill="#F2F0E7" class="mono" font-size="16" font-weight="800">anonymous polls</text>
+  <text x="82" y="207" fill="#F2F0E7" class="mono" font-size="16" font-weight="800">decisions anonymes</text>
   <rect x="488" y="54" width="734" height="192" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
-  <text x="524" y="102" fill="#111111" class="sans" font-size="30" font-weight="1000">Privacy-first polls built around temporary decision flows.</text>
-  <text x="524" y="150" fill="#111111" class="mono" font-size="19" font-weight="900">Nuxt server app / TypeScript / NanoID</text>
-  <text x="524" y="190" fill="#111111" class="mono" font-size="19" font-weight="900">QR sharing / ephemeral product logic</text>
+  <text x="524" y="102" fill="#111111" class="sans" font-size="30" font-weight="1000">Créer un sondage simple qui disparaît après usage.</text>
+  <text x="524" y="150" fill="#111111" class="mono" font-size="19" font-weight="900">Nuxt = frontend + backend dans le meme projet</text>
+  <text x="524" y="190" fill="#111111" class="mono" font-size="19" font-weight="900">NanoID + QR = lien court et partage rapide</text>
   <rect x="524" y="210" width="236" height="26" fill="#9BFF00"/>
-  <text x="1282" y="112" fill="#111111" class="mono" font-size="18" font-weight="900">FLOW</text>
-  <text x="1282" y="158" fill="#111111" class="sans" font-size="34" font-weight="1000">CREATE</text>
-  <text x="1282" y="196" fill="#111111" class="sans" font-size="34" font-weight="1000">VOTE</text>
-  <text x="1282" y="234" fill="#111111" class="sans" font-size="34" font-weight="1000">VANISH</text>
+  <text x="1282" y="112" fill="#111111" class="mono" font-size="18" font-weight="900">CYCLE</text>
+  <text x="1282" y="158" fill="#111111" class="sans" font-size="34" font-weight="1000">CREER</text>
+  <text x="1282" y="196" fill="#111111" class="sans" font-size="34" font-weight="1000">VOTER</text>
+  <text x="1282" y="234" fill="#111111" class="sans" font-size="34" font-weight="1000">EFFACER</text>
 </svg>

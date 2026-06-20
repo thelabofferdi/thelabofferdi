@@ -1,19 +1,19 @@
 <svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">SpaceBio AI brutalist project card</title>
-  <desc id="desc">Public project card for biology_space in black white and green</desc>
+  <title id="title">Carte projet SpaceBio AI</title>
+  <desc id="desc">Carte projet SpaceBio AI en francais</desc>
   <defs><style>.mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}</style></defs>
   <rect width="1600" height="300" fill="#F2F0E7"/>
   <rect x="24" y="24" width="1552" height="252" fill="none" stroke="#111111" stroke-width="4"/>
   <rect x="54" y="54" width="430" height="192" fill="#111111"/>
-  <text x="82" y="101" fill="#9BFF00" class="mono" font-size="20" font-weight="900">NASA DATA // AI</text>
+  <text x="82" y="101" fill="#9BFF00" class="mono" font-size="20" font-weight="900">NASA // IA</text>
   <text x="82" y="166" fill="#F2F0E7" class="sans" font-size="54" font-weight="1000">SpaceBio AI</text>
-  <text x="82" y="207" fill="#F2F0E7" class="mono" font-size="16" font-weight="800">research platform</text>
+  <text x="82" y="207" fill="#F2F0E7" class="mono" font-size="16" font-weight="800">recherche scientifique</text>
   <rect x="520" y="54" width="704" height="192" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
-  <text x="556" y="102" fill="#111111" class="sans" font-size="30" font-weight="1000">AI research app for space biology publications.</text>
-  <text x="556" y="150" fill="#111111" class="mono" font-size="19" font-weight="900">Django 5 / SQLite / HTMX / Tailwind</text>
-  <text x="556" y="190" fill="#111111" class="mono" font-size="19" font-weight="900">OpenRouter / Groq / article generation</text>
+  <text x="556" y="102" fill="#111111" class="sans" font-size="30" font-weight="1000">Explorer des articles de biologie spatiale avec l'IA.</text>
+  <text x="556" y="150" fill="#111111" class="mono" font-size="19" font-weight="900">Django = backend web rapide a organiser</text>
+  <text x="556" y="190" fill="#111111" class="mono" font-size="19" font-weight="900">OpenRouter + Groq = chat et generation IA</text>
   <rect x="556" y="210" width="198" height="26" fill="#9BFF00"/>
-  <text x="1282" y="112" fill="#111111" class="mono" font-size="18" font-weight="900">INDEXED</text>
+  <text x="1282" y="112" fill="#111111" class="mono" font-size="18" font-weight="900">INDEX</text>
   <text x="1282" y="171" fill="#111111" class="sans" font-size="58" font-weight="1000">572</text>
   <text x="1282" y="216" fill="#111111" class="sans" font-size="28" font-weight="1000">ARTICLES</text>
 </svg>
