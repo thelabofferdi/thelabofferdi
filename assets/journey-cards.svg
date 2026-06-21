@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Parcours et disponibilité</title>
+<desc id="desc">Workflow de collaboration backend.</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#010409"/><stop offset="0.55" stop-color="#07111d"/><stop offset="1" stop-color="#0d1117"/>
+  </linearGradient>
+  <radialGradient id="glowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 120) rotate(70) scale(360 520)">
+    <stop stop-color="#1f6feb" stop-opacity="0.46"/><stop offset="0.55" stop-color="#bc8cff" stop-opacity="0.16"/><stop offset="1" stop-color="#010409" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowGreen" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 360) rotate(40) scale(260 360)">
+    <stop stop-color="#3fb950" stop-opacity="0.22"/><stop offset="1" stop-color="#010409" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" stroke="#30363d" stroke-opacity="0.38" stroke-width="1"/>
+  </pattern>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="145%" color-interpolation-filters="sRGB">
+    <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000" flood-opacity="0.44"/>
+  </filter>
+  <style>
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+  .mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+  .text{fill:#e6edf3} .soft{fill:#c9d1d9} .muted{fill:#8b949e}
+  .blue{fill:#58a6ff} .green{fill:#3fb950} .purple{fill:#bc8cff} .orange{fill:#d29922} .red{fill:#f85149}
+  .panel{fill:#0d1117;stroke:#30363d;stroke-width:1.6}
+  .panel2{fill:#161b22;stroke:#30363d;stroke-width:1.4}
+</style>
+
+</defs>
+<rect width="1200" height="370" rx="12" fill="url(#bg)"/>
+<rect width="1200" height="370" rx="12" fill="url(#grid)" opacity="0.42"/>
+<rect width="1200" height="370" rx="12" fill="url(#glowBlue)"/>
+<rect width="1200" height="370" rx="12" fill="url(#glowGreen)"/>
+
+<rect x="24" y="24" width="1152" height="322" rx="26" class="panel" filter="url(#shadow)"/>
+<text x="58" y="82" class="sans text" font-size="40" font-weight="900" text-anchor="start" opacity="1">Parcours &amp; Disponibilité</text>
+<text x="58" y="116" class="sans muted" font-size="18" font-weight="500" text-anchor="start" opacity="1">Disponible pour transformer une idée en backend fiable et maintenable.</text>
+<g transform="translate(58 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">01</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Comprendre</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">besoin métier,</text>
+<text x="24" y="120" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">contraintes, données</text></g>
+<g transform="translate(332 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">02</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Concevoir</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">routes, DB, auth, erreurs</text></g>
+<g transform="translate(606 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">03</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Construire</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">API, workers, realtime,</text>
+<text x="24" y="120" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">mobile</text></g>
+<g transform="translate(880 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">04</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Livrer</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">Docker, docs, logs,</text>
+<text x="24" y="120" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">maintenance</text></g>
+</svg>

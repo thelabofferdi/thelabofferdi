@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" fill="none" role="img" aria-labelledby="title desc">
-<title id="title">Backend lab footer</title>
-<desc id="desc">Footer du profil backend TheLaboFerdi.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">GitHub activity</title>
+<desc id="desc">Courbe stylisée de l’activité GitHub.</desc>
 
 <defs>
   <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
@@ -28,14 +28,16 @@
 </style>
 
 </defs>
-<rect width="1200" height="190" rx="12" fill="url(#bg)"/>
-<rect width="1200" height="190" rx="12" fill="url(#grid)" opacity="0.42"/>
-<rect width="1200" height="190" rx="12" fill="url(#glowBlue)"/>
-<rect width="1200" height="190" rx="12" fill="url(#glowGreen)"/>
+<rect width="1200" height="380" rx="12" fill="url(#bg)"/>
+<rect width="1200" height="380" rx="12" fill="url(#grid)" opacity="0.42"/>
+<rect width="1200" height="380" rx="12" fill="url(#glowBlue)"/>
+<rect width="1200" height="380" rx="12" fill="url(#glowGreen)"/>
 
-<rect x="24" y="24" width="1152" height="140" rx="24" class="panel" filter="url(#shadow)"/>
-<text x="58" y="82" class="sans text" font-size="32" font-weight="900" text-anchor="start" opacity="1">Des backends fiables pour de vrais produits.</text>
-<text x="58" y="120" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">construire() · livrer() · maintenir() · mesurer()</text>
-<rect x="842" y="58" width="270" height="54" rx="10" fill="#58a6ff18" stroke="#58a6ff"/>
-<text x="884" y="92" class="mono blue" font-size="17" font-weight="900" text-anchor="start" opacity="1">github.com/thelabofferdi</text>
+<rect x="24" y="24" width="1152" height="332" rx="26" class="panel" filter="url(#shadow)"/>
+<text x="58" y="82" class="sans text" font-size="40" font-weight="900" text-anchor="start" opacity="1">Activité GitHub</text>
+<text x="58" y="116" class="sans muted" font-size="18" font-weight="500" text-anchor="start" opacity="1">Un rythme de build: commits, itérations, corrections, livraisons.</text>
+<rect x="58" y="148" width="1084" height="156" rx="18" fill="#010409" stroke="#30363d"/>
+<path d="M78 276 C136 218 160 236 208 178 S288 154 326 198 S390 254 438 180 S526 118 590 166 S682 226 732 148 S824 94 902 132 S1000 210 1102 88 V304 H78 Z" fill="#1f6feb" opacity="0.18"/>
+<path d="M78 276 C136 218 160 236 208 178 S288 154 326 198 S390 254 438 180 S526 118 590 166 S682 226 732 148 S824 94 902 132 S1000 210 1102 88" stroke="#58a6ff" stroke-width="4" fill="none" stroke-linecap="round"/>
+<text x="78" y="332" class="mono green" font-size="15" font-weight="800" text-anchor="start" opacity="1">commit stream · backend work · private repos included</text>
 </svg>

@@ -1,20 +1,62 @@
-<svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Carte projet GhostPoll</title>
-  <desc id="desc">Carte projet GhostPoll en francais</desc>
-  <defs><style>.mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}</style></defs>
-  <rect width="1600" height="300" fill="#F2F0E7"/>
-  <rect x="24" y="24" width="1552" height="252" fill="none" stroke="#111111" stroke-width="4"/>
-  <rect x="54" y="54" width="398" height="192" fill="#111111"/>
-  <text x="82" y="101" fill="#9BFF00" class="mono" font-size="20" font-weight="900">SONDAGE // PRIVE</text>
-  <text x="82" y="166" fill="#F2F0E7" class="sans" font-size="54" font-weight="1000">GhostPoll</text>
-  <text x="82" y="207" fill="#F2F0E7" class="mono" font-size="16" font-weight="800">decisions anonymes</text>
-  <rect x="488" y="54" width="734" height="192" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
-  <text x="524" y="102" fill="#111111" class="sans" font-size="30" font-weight="1000">Créer un sondage simple qui disparaît après usage.</text>
-  <text x="524" y="150" fill="#111111" class="mono" font-size="19" font-weight="900">Nuxt = frontend + backend dans le meme projet</text>
-  <text x="524" y="190" fill="#111111" class="mono" font-size="19" font-weight="900">NanoID + QR = lien court et partage rapide</text>
-  <rect x="524" y="210" width="236" height="26" fill="#9BFF00"/>
-  <text x="1282" y="112" fill="#111111" class="mono" font-size="18" font-weight="900">CYCLE</text>
-  <text x="1282" y="158" fill="#111111" class="sans" font-size="34" font-weight="1000">CREER</text>
-  <text x="1282" y="196" fill="#111111" class="sans" font-size="34" font-weight="1000">VOTER</text>
-  <text x="1282" y="234" fill="#111111" class="sans" font-size="34" font-weight="1000">EFFACER</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="430" viewBox="0 0 1180 430" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">GhostPoll</title>
+<desc id="desc">Sondages anonymes et éphémères avec liens courts, QR et cycle de vie minimaliste.</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#010409"/><stop offset="0.55" stop-color="#07111d"/><stop offset="1" stop-color="#0d1117"/>
+  </linearGradient>
+  <radialGradient id="glowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 120) rotate(70) scale(360 520)">
+    <stop stop-color="#1f6feb" stop-opacity="0.46"/><stop offset="0.55" stop-color="#bc8cff" stop-opacity="0.16"/><stop offset="1" stop-color="#010409" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowGreen" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 360) rotate(40) scale(260 360)">
+    <stop stop-color="#3fb950" stop-opacity="0.22"/><stop offset="1" stop-color="#010409" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" stroke="#30363d" stroke-opacity="0.38" stroke-width="1"/>
+  </pattern>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="145%" color-interpolation-filters="sRGB">
+    <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000" flood-opacity="0.44"/>
+  </filter>
+  <style>
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+  .mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+  .text{fill:#e6edf3} .soft{fill:#c9d1d9} .muted{fill:#8b949e}
+  .blue{fill:#58a6ff} .green{fill:#3fb950} .purple{fill:#bc8cff} .orange{fill:#d29922} .red{fill:#f85149}
+  .panel{fill:#0d1117;stroke:#30363d;stroke-width:1.6}
+  .panel2{fill:#161b22;stroke:#30363d;stroke-width:1.4}
+</style>
+
+</defs>
+<rect width="1180" height="430" rx="12" fill="url(#bg)"/>
+<rect width="1180" height="430" rx="12" fill="url(#grid)" opacity="0.42"/>
+<rect width="1180" height="430" rx="12" fill="url(#glowBlue)"/>
+<rect width="1180" height="430" rx="12" fill="url(#glowGreen)"/>
+
+<rect x="2" y="2" width="1176" height="426" rx="30" class="panel" stroke="#bc8cff" stroke-width="3" filter="url(#shadow)"/>
+<rect x="38" y="78" width="430" height="270" rx="22" class="panel2"/>
+<rect x="38" y="78" width="430" height="42" rx="22" fill="#010409"/>
+<circle cx="66" cy="99" r="6" fill="#f85149"/><circle cx="90" cy="99" r="6" fill="#d29922"/><circle cx="114" cy="99" r="6" fill="#3fb950"/>
+<text x="64" y="154" class="mono text" font-size="24" font-weight="900" text-anchor="start" opacity="1">ghostpoll/session</text>
+<text x="64" y="192" class="sans muted" font-size="18" font-weight="500" text-anchor="start" opacity="1">créer, voter, effacer</text>
+<rect x="64" y="218" width="338" height="48" rx="12" fill="#010409" stroke="#30363d"/>
+<text x="84" y="249" class="mono green" font-size="16" font-weight="800" text-anchor="start" opacity="1">$ pnpm dev</text>
+<text x="64" y="304" class="mono soft" font-size="16" font-weight="750" text-anchor="start" opacity="1">poll -&gt; NanoID -&gt; QR -&gt; vote -&gt;</text>
+<text x="64" y="330" class="mono soft" font-size="16" font-weight="750" text-anchor="start" opacity="1">expiration</text>
+<text x="520" y="42" class="mono blue" font-size="17" font-weight="900" text-anchor="start" opacity="1">PRIVACY · POLLS · LINKS</text>
+<text x="520" y="82" class="sans text" font-size="42" font-weight="900" text-anchor="start" opacity="1">GhostPoll</text>
+<text x="520" y="142" class="sans soft" font-size="21" font-weight="650" text-anchor="start" opacity="1">Sondages anonymes et éphémères avec liens courts, QR et</text>
+<text x="520" y="173" class="sans soft" font-size="21" font-weight="650" text-anchor="start" opacity="1">cycle de vie minimaliste.</text>
+<text x="520" y="280" class="mono muted" font-size="15" font-weight="900" text-anchor="start" opacity="1">STACK TECHNIQUE</text>
+<rect x="520" y="300" width="98" height="30" rx="15" fill="#bc8cff22" stroke="#bc8cff" stroke-opacity="0.76"/>
+<text x="534" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">Nuxt</text>
+<rect x="632" y="300" width="98" height="30" rx="15" fill="#bc8cff22" stroke="#bc8cff" stroke-opacity="0.76"/>
+<text x="646" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">TypeScript</text>
+<rect x="744" y="300" width="98" height="30" rx="15" fill="#bc8cff22" stroke="#bc8cff" stroke-opacity="0.76"/>
+<text x="758" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">NanoID</text>
+<rect x="856" y="300" width="98" height="30" rx="15" fill="#bc8cff22" stroke="#bc8cff" stroke-opacity="0.76"/>
+<text x="870" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">QR</text>
+<line x1="520" y1="378" x2="1124" y2="378" stroke="#30363d" stroke-width="2"/>
+<text x="520" y="406" class="sans green" font-size="20" font-weight="800" text-anchor="start" opacity="1">Live logic + Code</text>
+<text x="1124" y="406" class="mono muted" font-size="20" font-weight="900" text-anchor="end" opacity="1">TheLaboFerdi</text>
 </svg>

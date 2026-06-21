@@ -1,23 +1,62 @@
-<svg width="1600" height="300" viewBox="0 0 1600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Carte projet ClipIntelli</title>
-  <desc id="desc">Carte projet ClipIntelli en francais</desc>
-  <defs><style>.mono{font-family:JetBrains Mono,Consolas,monospace}.sans{font-family:Inter,Segoe UI,Arial,sans-serif}</style></defs>
-  <rect width="1600" height="300" fill="#F2F0E7"/>
-  <rect x="24" y="24" width="1552" height="252" fill="none" stroke="#111111" stroke-width="4"/>
-  <rect x="54" y="54" width="410" height="192" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
-  <text x="82" y="96" fill="#111111" class="mono" font-size="20" font-weight="900">LOCAL // IA</text>
-  <rect x="82" y="112" width="176" height="8" fill="#9BFF00"/>
-  <text x="82" y="170" fill="#111111" class="sans" font-size="54" font-weight="1000">ClipIntelli</text>
-  <text x="82" y="212" fill="#111111" class="mono" font-size="16" font-weight="900">presse-papiers intelligent</text>
-  <rect x="500" y="54" width="720" height="192" fill="#111111"/>
-  <text x="536" y="102" fill="#F2F0E7" class="sans" font-size="30" font-weight="1000">Une app desktop qui garde, classe et aide avec l'IA.</text>
-  <text x="536" y="150" fill="#9BFF00" class="mono" font-size="19" font-weight="900">Electron = app installable</text>
-  <text x="536" y="190" fill="#F2F0E7" class="mono" font-size="19" font-weight="900">sql.js = donnees locales / AI SDK = assistance</text>
-  <g transform="translate(1260 75)">
-    <rect width="236" height="150" fill="#F2F0E7" stroke="#111111" stroke-width="3"/>
-    <text x="28" y="48" fill="#111111" class="mono" font-size="17" font-weight="900">CAPTER</text>
-    <text x="28" y="86" fill="#111111" class="mono" font-size="17" font-weight="900">RANGER</text>
-    <text x="28" y="124" fill="#111111" class="mono" font-size="17" font-weight="900">AIDER</text>
-    <rect x="142" y="30" width="48" height="98" fill="#9BFF00" stroke="#111111" stroke-width="3"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="430" viewBox="0 0 1180 430" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">ClipIntelli</title>
+<desc id="desc">Gestionnaire de presse-papiers intelligent avec données locales et assistance IA.</desc>
+
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#010409"/><stop offset="0.55" stop-color="#07111d"/><stop offset="1" stop-color="#0d1117"/>
+  </linearGradient>
+  <radialGradient id="glowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(900 120) rotate(70) scale(360 520)">
+    <stop stop-color="#1f6feb" stop-opacity="0.46"/><stop offset="0.55" stop-color="#bc8cff" stop-opacity="0.16"/><stop offset="1" stop-color="#010409" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="glowGreen" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(180 360) rotate(40) scale(260 360)">
+    <stop stop-color="#3fb950" stop-opacity="0.22"/><stop offset="1" stop-color="#010409" stop-opacity="0"/>
+  </radialGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+    <path d="M36 0H0V36" stroke="#30363d" stroke-opacity="0.38" stroke-width="1"/>
+  </pattern>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="145%" color-interpolation-filters="sRGB">
+    <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000" flood-opacity="0.44"/>
+  </filter>
+  <style>
+  .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+  .mono{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+  .text{fill:#e6edf3} .soft{fill:#c9d1d9} .muted{fill:#8b949e}
+  .blue{fill:#58a6ff} .green{fill:#3fb950} .purple{fill:#bc8cff} .orange{fill:#d29922} .red{fill:#f85149}
+  .panel{fill:#0d1117;stroke:#30363d;stroke-width:1.6}
+  .panel2{fill:#161b22;stroke:#30363d;stroke-width:1.4}
+</style>
+
+</defs>
+<rect width="1180" height="430" rx="12" fill="url(#bg)"/>
+<rect width="1180" height="430" rx="12" fill="url(#grid)" opacity="0.42"/>
+<rect width="1180" height="430" rx="12" fill="url(#glowBlue)"/>
+<rect width="1180" height="430" rx="12" fill="url(#glowGreen)"/>
+
+<rect x="2" y="2" width="1176" height="426" rx="30" class="panel" stroke="#d29922" stroke-width="3" filter="url(#shadow)"/>
+<rect x="38" y="78" width="430" height="270" rx="22" class="panel2"/>
+<rect x="38" y="78" width="430" height="42" rx="22" fill="#010409"/>
+<circle cx="66" cy="99" r="6" fill="#f85149"/><circle cx="90" cy="99" r="6" fill="#d29922"/><circle cx="114" cy="99" r="6" fill="#3fb950"/>
+<text x="64" y="154" class="mono text" font-size="24" font-weight="900" text-anchor="start" opacity="1">clipintelli/db</text>
+<text x="64" y="192" class="sans muted" font-size="18" font-weight="500" text-anchor="start" opacity="1">capturer, classer, aider</text>
+<rect x="64" y="218" width="338" height="48" rx="12" fill="#010409" stroke="#30363d"/>
+<text x="84" y="249" class="mono green" font-size="16" font-weight="800" text-anchor="start" opacity="1">$ electron .</text>
+<text x="64" y="304" class="mono soft" font-size="16" font-weight="750" text-anchor="start" opacity="1">clipboard -&gt; sql.js -&gt; index -&gt; AI</text>
+<text x="64" y="330" class="mono soft" font-size="16" font-weight="750" text-anchor="start" opacity="1">helper -&gt; desktop</text>
+<text x="520" y="42" class="mono blue" font-size="17" font-weight="900" text-anchor="start" opacity="1">LOCAL · CLIPBOARD · AI</text>
+<text x="520" y="82" class="sans text" font-size="42" font-weight="900" text-anchor="start" opacity="1">ClipIntelli</text>
+<text x="520" y="142" class="sans soft" font-size="21" font-weight="650" text-anchor="start" opacity="1">Gestionnaire de presse-papiers intelligent avec données</text>
+<text x="520" y="173" class="sans soft" font-size="21" font-weight="650" text-anchor="start" opacity="1">locales et assistance IA.</text>
+<text x="520" y="280" class="mono muted" font-size="15" font-weight="900" text-anchor="start" opacity="1">STACK TECHNIQUE</text>
+<rect x="520" y="300" width="98" height="30" rx="15" fill="#d2992222" stroke="#d29922" stroke-opacity="0.76"/>
+<text x="534" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">Electron</text>
+<rect x="632" y="300" width="98" height="30" rx="15" fill="#d2992222" stroke="#d29922" stroke-opacity="0.76"/>
+<text x="646" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">JavaScript</text>
+<rect x="744" y="300" width="98" height="30" rx="15" fill="#d2992222" stroke="#d29922" stroke-opacity="0.76"/>
+<text x="758" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">sql.js</text>
+<rect x="856" y="300" width="98" height="30" rx="15" fill="#d2992222" stroke="#d29922" stroke-opacity="0.76"/>
+<text x="870" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">AI</text>
+<line x1="520" y1="378" x2="1124" y2="378" stroke="#30363d" stroke-width="2"/>
+<text x="520" y="406" class="sans green" font-size="20" font-weight="800" text-anchor="start" opacity="1">Code GitHub</text>
+<text x="1124" y="406" class="mono muted" font-size="20" font-weight="900" text-anchor="end" opacity="1">TheLaboFerdi</text>
 </svg>
