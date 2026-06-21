@@ -1,4 +1,4 @@
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 
 const C = {
   bg: '#010409',
@@ -18,6 +18,8 @@ const C = {
   orange: '#d29922',
   red: '#f85149',
 };
+
+const LOGO_DIR = 'assets/logos';
 
 const fonts = `
   .sans{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
@@ -55,6 +57,15 @@ function esc(value) {
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;');
+}
+
+function imageDataUri(file) {
+  if (!file) return null;
+  const path = `${LOGO_DIR}/${file}`;
+  if (!existsSync(path)) return null;
+  const ext = file.split('.').pop().toLowerCase();
+  const mime = ext === 'svg' ? 'image/svg+xml' : `image/${ext === 'jpg' ? 'jpeg' : ext}`;
+  return `data:${mime};base64,${readFileSync(path).toString('base64')}`;
 }
 
 function svg({ width, height, title, desc, body, extraDefs = '' }) {
@@ -138,6 +149,13 @@ function logoMark(x, y, name, { size = 32, color, opacity = 1 } = {}) {
   </g>`;
 }
 
+function realLogoImage(x, y, size, file, { inset = 0, opacity = 1 } = {}) {
+  const href = imageDataUri(file);
+  if (!href) return '';
+  const len = size - inset * 2;
+  return `<image x="${x + inset}" y="${y + inset}" width="${len}" height="${len}" href="${href}" preserveAspectRatio="xMidYMid meet" opacity="${opacity}"/>`;
+}
+
 function techLogoChip(x, y, name, color = C.blue, w = 122) {
   const meta = techMeta(name, color);
   return `<g transform="translate(${x} ${y})">
@@ -191,23 +209,33 @@ ${body}`;
 }
 
 const publicApps = [
-  { name: 'SellBulk', logo: 'SB', color: C.blue },
-  { name: 'WhatAutoSys', logo: 'WA', color: C.green },
-  { name: 'GhostPoll', logo: 'GP', color: C.purple },
-  { name: 'ClipIntelli', logo: 'CI', color: C.orange },
+  { name: 'SellBulk', logo: 'SB', logoFile: 'sellbulk.png', color: C.blue },
+  { name: 'WhatAutoSys', logo: 'WA', logoFile: 'whatautosys.png', color: C.green },
+  { name: 'GhostPoll', logo: 'GP', logoFile: 'ghostpoll.png', color: C.purple },
+  { name: 'ClipIntelli', logo: 'CI', logoFile: 'clipintelli.png', color: C.orange },
   { name: 'SpaceBio AI', logo: 'BIO', color: C.green },
 ];
 
 function appLogoBadge(x, y, app) {
+  const logo = app.logoFile
+    ? realLogoImage(8, 5, 28, app.logoFile)
+    : t(22, 24, app.logo, { size: app.logo.length > 2 ? 9 : 11, cls: 'text', family: 'mono', weight: 900, anchor: 'middle' });
   return `<g transform="translate(${x} ${y})">
     <rect x="0" y="0" width="196" height="38" rx="12" fill="${C.bg}" stroke="${app.color}" stroke-opacity="0.72"/>
     <rect x="10" y="7" width="24" height="24" rx="7" fill="${app.color}22" stroke="${app.color}"/>
-    ${t(22, 24, app.logo, { size: app.logo.length > 2 ? 9 : 11, cls: 'text', family: 'mono', weight: 900, anchor: 'middle' })}
+    ${logo}
     ${t(46, 25, app.name, { size: 14, cls: 'soft', family: 'mono', weight: 850 })}
   </g>`;
 }
 
 function projectLogoMark(x, y, p) {
+  const realLogo = p.logoFile ? realLogoImage(8, 8, 72, p.logoFile) : '';
+  if (realLogo) {
+    return `<g transform="translate(${x} ${y})">
+      <rect x="0" y="0" width="88" height="88" rx="22" fill="${p.color}18" stroke="${p.color}" stroke-width="2.5"/>
+      ${realLogo}
+    </g>`;
+  }
   return `<g transform="translate(${x} ${y})">
     <rect x="0" y="0" width="88" height="88" rx="22" fill="${p.color}18" stroke="${p.color}" stroke-width="2.5"/>
     <circle cx="44" cy="44" r="25" fill="${C.bg}" stroke="${p.color}" stroke-width="2"/>
@@ -440,7 +468,7 @@ ${t(884, 92, 'github.com/thelabofferdi', { size: 17, cls: 'blue', family: 'mono'
 const projects = [
   {
     file: 'sellbulk.svg', name: 'SellBulk', kicker: 'PUBLIC · AUTOMATISATION COMMERCIALE',
-    logo: 'SB',
+    logo: 'SB', logoFile: 'sellbulk.png',
     terminalTitle: 'sellbulk/api', terminalLine: 'moteurs, stats, messages', command: '$ docker compose up',
     flow: 'messages -> API -> workers -> métriques -> livraison',
     desc: 'Backend pour automatisation WhatsApp avec moteur robuste, suivi et livraison conteneurisée.',
@@ -448,7 +476,7 @@ const projects = [
   },
   {
     file: 'whatautosys.svg', name: 'WhatAutoSys v3', kicker: 'DESKTOP · REALTIME · LOCAL DATA',
-    logo: 'WA',
+    logo: 'WA', logoFile: 'whatautosys.png',
     terminalTitle: 'whatautosys/local', terminalLine: 'WhatsApp, fichiers, IA', command: '$ npm run dev',
     flow: 'desktop -> Express -> Socket.IO -> SQLite -> IA locale',
     desc: 'Application locale qui connecte WhatsApp, fichiers et IA avec une API temps réel simple.',
@@ -456,7 +484,7 @@ const projects = [
   },
   {
     file: 'ghostpoll.svg', name: 'GhostPoll', kicker: 'PRIVACY · POLLS · LINKS',
-    logo: 'GP',
+    logo: 'GP', logoFile: 'ghostpoll.png',
     terminalTitle: 'ghostpoll/session', terminalLine: 'créer, voter, effacer', command: '$ pnpm dev',
     flow: 'poll -> NanoID -> QR -> vote -> expiration',
     desc: 'Sondages anonymes et éphémères avec liens courts, QR et cycle de vie minimaliste.',
@@ -464,7 +492,7 @@ const projects = [
   },
   {
     file: 'clipintelli.svg', name: 'ClipIntelli', kicker: 'LOCAL · CLIPBOARD · AI',
-    logo: 'CI',
+    logo: 'CI', logoFile: 'clipintelli.png',
     terminalTitle: 'clipintelli/db', terminalLine: 'capturer, classer, aider', command: '$ electron .',
     flow: 'clipboard -> sql.js -> index -> AI helper -> desktop',
     desc: 'Gestionnaire de presse-papiers intelligent avec données locales et assistance IA.',
