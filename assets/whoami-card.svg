@@ -44,8 +44,33 @@
 <text x="74" y="292" class="mono blue" font-size="21" font-weight="900" text-anchor="start" opacity="1">terrain:</text><text x="220" y="292" class="sans soft" font-size="22" font-weight="700" text-anchor="start" opacity="1">Backends web, mobile, desktop local, realtime</text>
 <text x="220" y="320" class="sans soft" font-size="22" font-weight="700" text-anchor="start" opacity="1">et workers.</text>
 <text x="74" y="360" class="mono blue" font-size="21" font-weight="900" text-anchor="start" opacity="1">langages:</text><text x="220" y="360" class="sans soft" font-size="22" font-weight="700" text-anchor="start" opacity="1">Python, TypeScript, JavaScript, Rust, Go</text>
-<text x="74" y="424" class="mono blue" font-size="21" font-weight="900" text-anchor="start" opacity="1">approche:</text><text x="220" y="424" class="sans soft" font-size="22" font-weight="700" text-anchor="start" opacity="1">Simple à comprendre, robuste à livrer, propre</text>
-<text x="220" y="452" class="sans soft" font-size="22" font-weight="700" text-anchor="start" opacity="1">à maintenir.</text>
+<text x="74" y="444" class="mono blue" font-size="21" font-weight="900" text-anchor="start" opacity="1">approche:</text><text x="220" y="444" class="sans soft" font-size="22" font-weight="700" text-anchor="start" opacity="1">Simple à comprendre, robuste à livrer, propre</text>
+<text x="220" y="472" class="sans soft" font-size="22" font-weight="700" text-anchor="start" opacity="1">à maintenir.</text>
+<g opacity="1">
+    <rect x="220" y="378" width="34" height="34" rx="10" fill="#3776AB22" stroke="#3776AB" stroke-width="1.4"/>
+    <circle cx="237" cy="395" r="10" fill="#3776AB" opacity="0.95"/>
+    <text x="237" y="397.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">Py</text>
+  </g>
+<g opacity="1">
+    <rect x="278" y="378" width="34" height="34" rx="10" fill="#3178C622" stroke="#3178C6" stroke-width="1.4"/>
+    <circle cx="295" cy="395" r="10" fill="#3178C6" opacity="0.95"/>
+    <text x="295" y="397.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">TS</text>
+  </g>
+<g opacity="1">
+    <rect x="336" y="378" width="34" height="34" rx="10" fill="#F7DF1E22" stroke="#F7DF1E" stroke-width="1.4"/>
+    <circle cx="353" cy="395" r="10" fill="#F7DF1E" opacity="0.95"/>
+    <text x="353" y="397.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">JS</text>
+  </g>
+<g opacity="1">
+    <rect x="394" y="378" width="34" height="34" rx="10" fill="#DEA58422" stroke="#DEA584" stroke-width="1.4"/>
+    <circle cx="411" cy="395" r="10" fill="#DEA584" opacity="0.95"/>
+    <text x="411" y="397.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">Rs</text>
+  </g>
+<g opacity="1">
+    <rect x="452" y="378" width="34" height="34" rx="10" fill="#00ADD822" stroke="#00ADD8" stroke-width="1.4"/>
+    <circle cx="469" cy="395" r="10" fill="#00ADD8" opacity="0.95"/>
+    <text x="469" y="397.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">Go</text>
+  </g>
 <g transform="translate(856 166)">
   <rect x="0" y="0" width="238" height="238" rx="20" class="panel2"/>
   <rect x="28" y="34" width="142" height="40" rx="8" fill="#58a6ff22" stroke="#58a6ff"/>
@@ -56,6 +81,6 @@
   <text x="52" y="188" class="mono green" font-size="16" font-weight="900" text-anchor="start" opacity="1">DATA</text>
   <path d="M170 54h34v128h-60" stroke="#58a6ff" stroke-width="4" stroke-linecap="round"/>
 </g>
-<rect x="840" y="430" width="286" height="30" rx="15" fill="#bc8cff22" stroke="#bc8cff" stroke-opacity="0.76"/>
-<text x="854" y="450" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">private client code respected</text>
+<rect x="840" y="458" width="286" height="30" rx="15" fill="#bc8cff22" stroke="#bc8cff" stroke-opacity="0.76"/>
+<text x="854" y="478" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">private client code respected</text>
 </svg>

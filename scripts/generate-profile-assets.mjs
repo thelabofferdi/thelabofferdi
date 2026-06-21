@@ -74,6 +74,83 @@ function t(x, y, text, { size = 18, cls = 'soft', weight = 500, family = 'sans',
   return `<text x="${x}" y="${y}" class="${family} ${cls}" font-size="${size}" font-weight="${weight}" text-anchor="${anchor}" opacity="${opacity}">${esc(text)}</text>`;
 }
 
+function tf(x, y, text, { size = 18, fill = C.text, weight = 500, family = 'sans', anchor = 'start', opacity = 1 } = {}) {
+  return `<text x="${x}" y="${y}" font-family="${family === 'mono' ? 'SFMono-Regular,Consolas,Liberation Mono,monospace' : '-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif'}" font-size="${size}" font-weight="${weight}" text-anchor="${anchor}" fill="${fill}" opacity="${opacity}">${esc(text)}</text>`;
+}
+
+const TECH = {
+  Python: { short: 'Py', color: '#3776AB' },
+  TypeScript: { short: 'TS', color: '#3178C6' },
+  JavaScript: { short: 'JS', color: '#F7DF1E', text: C.bg },
+  Rust: { short: 'Rs', color: '#DEA584', text: C.bg },
+  Go: { short: 'Go', color: '#00ADD8', text: C.bg },
+  FastAPI: { short: 'FA', color: '#009688' },
+  NestJS: { short: 'N', color: '#E0234E' },
+  Express: { short: 'Ex', color: C.text, text: C.bg },
+  PostgreSQL: { short: 'PG', color: '#336791' },
+  SQLite: { short: 'SQL', color: '#58A6FF' },
+  Redis: { short: 'Rd', color: '#DC382D' },
+  Workers: { short: 'W', color: C.purple },
+  WebSocket: { short: 'WS', color: C.blue },
+  MQTT: { short: 'MQ', color: C.green },
+  Docker: { short: 'DK', color: '#2496ED' },
+  'CI/CD': { short: 'CI', color: C.orange },
+  Monitoring: { short: 'Mo', color: C.green },
+  Node: { short: 'Nd', color: '#3C873A' },
+  Metrics: { short: 'Mx', color: C.blue },
+  'Socket.IO': { short: 'IO', color: C.text, text: C.bg },
+  Electron: { short: 'El', color: '#47848F' },
+  Nuxt: { short: 'Nx', color: '#00DC82', text: C.bg },
+  NanoID: { short: 'ID', color: C.purple },
+  QR: { short: 'QR', color: C.blue },
+  'sql.js': { short: 'SQL', color: C.orange, text: C.bg },
+  AI: { short: 'AI', color: C.purple },
+  Django: { short: 'Dj', color: '#0C4B33' },
+  OpenRouter: { short: 'OR', color: C.blue },
+  Groq: { short: 'Gq', color: C.orange, text: C.bg },
+  GitHub: { short: 'GH', color: C.text, text: C.bg },
+  API: { short: 'API', color: C.blue },
+  Auth: { short: 'Au', color: C.green },
+  Data: { short: 'DB', color: C.orange },
+  Mobile: { short: 'Mb', color: C.blue },
+  RAG: { short: 'AI', color: C.purple },
+  WhatsApp: { short: 'WA', color: C.green },
+  OCR: { short: 'OCR', color: C.orange, text: C.bg },
+  Ops: { short: 'Ops', color: C.blue },
+  Idea: { short: '01', color: C.blue },
+  Design: { short: '02', color: C.purple },
+  Build: { short: '03', color: C.green },
+};
+
+function techMeta(name, color = C.blue) {
+  return TECH[name] ?? { short: String(name).replace(/[^A-Za-z0-9]/g, '').slice(0, 3) || '•', color };
+}
+
+function logoMark(x, y, name, { size = 32, color, opacity = 1 } = {}) {
+  const meta = techMeta(name, color);
+  const markColor = color ?? meta.color;
+  const label = meta.short;
+  const fontSize = label.length > 2 ? Math.round(size * 0.26) : Math.round(size * 0.34);
+  return `<g opacity="${opacity}">
+    <rect x="${x}" y="${y}" width="${size}" height="${size}" rx="${Math.round(size * 0.28)}" fill="${markColor}22" stroke="${markColor}" stroke-width="1.4"/>
+    <circle cx="${x + size / 2}" cy="${y + size / 2}" r="${Math.round(size * 0.28)}" fill="${markColor}" opacity="0.95"/>
+    ${tf(x + size / 2, y + size * 0.58, label, { size: fontSize, fill: meta.text ?? C.text, family: 'mono', weight: 900, anchor: 'middle' })}
+  </g>`;
+}
+
+function techLogoChip(x, y, name, color = C.blue, w = 122) {
+  const meta = techMeta(name, color);
+  return `<g transform="translate(${x} ${y})">
+    <rect x="0" y="0" width="${w}" height="32" rx="16" fill="${color}18" stroke="${color}" stroke-opacity="0.82"/>
+    ${logoMark(8, 6, name, { size: 20, color: meta.color })}
+    ${tf(36, 21, name, { size: 12, fill: C.text, family: 'mono', weight: 850 })}
+  </g>`;
+}
+
+function techStackRow(x, y, name, { emphasis = false } = {}) {
+  return `${logoMark(x, y - 24, name, { size: 30 })}${t(x + 42, y, name, { size: emphasis ? 26 : 24, cls: emphasis ? 'text' : 'soft', weight: emphasis ? 900 : 850 })}`;
+}
+
 function wrap(text, max = 68) {
   const words = text.split(' ');
   const rows = [];
@@ -113,6 +190,32 @@ function terminal(x, y, w, h, lines) {
 ${body}`;
 }
 
+const publicApps = [
+  { name: 'SellBulk', logo: 'SB', color: C.blue },
+  { name: 'WhatAutoSys', logo: 'WA', color: C.green },
+  { name: 'GhostPoll', logo: 'GP', color: C.purple },
+  { name: 'ClipIntelli', logo: 'CI', color: C.orange },
+  { name: 'SpaceBio AI', logo: 'BIO', color: C.green },
+];
+
+function appLogoBadge(x, y, app) {
+  return `<g transform="translate(${x} ${y})">
+    <rect x="0" y="0" width="196" height="38" rx="12" fill="${C.bg}" stroke="${app.color}" stroke-opacity="0.72"/>
+    <rect x="10" y="7" width="24" height="24" rx="7" fill="${app.color}22" stroke="${app.color}"/>
+    ${t(22, 24, app.logo, { size: app.logo.length > 2 ? 9 : 11, cls: 'text', family: 'mono', weight: 900, anchor: 'middle' })}
+    ${t(46, 25, app.name, { size: 14, cls: 'soft', family: 'mono', weight: 850 })}
+  </g>`;
+}
+
+function projectLogoMark(x, y, p) {
+  return `<g transform="translate(${x} ${y})">
+    <rect x="0" y="0" width="88" height="88" rx="22" fill="${p.color}18" stroke="${p.color}" stroke-width="2.5"/>
+    <circle cx="44" cy="44" r="25" fill="${C.bg}" stroke="${p.color}" stroke-width="2"/>
+    <path d="M24 64h40" stroke="${p.color}" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+    ${t(44, 50, p.logo, { size: p.logo.length > 2 ? 16 : 22, cls: 'text', family: 'mono', weight: 900, anchor: 'middle' })}
+  </g>`;
+}
+
 function header() {
   const body = `
 <rect x="24" y="24" width="1152" height="332" rx="28" class="panel" filter="url(#shadow)"/>
@@ -146,8 +249,11 @@ function whoami() {
     ['mission', 'Créer des APIs, gérer les données, sécuriser les accès et automatiser.', 216],
     ['terrain', 'Backends web, mobile, desktop local, realtime et workers.', 292],
     ['langages', 'Python, TypeScript, JavaScript, Rust, Go', 360],
-    ['approche', 'Simple à comprendre, robuste à livrer, propre à maintenir.', 424],
+    ['approche', 'Simple à comprendre, robuste à livrer, propre à maintenir.', 444],
   ];
+  const languageMarks = ['Python', 'TypeScript', 'JavaScript', 'Rust', 'Go']
+    .map((name, i) => logoMark(220 + i * 58, 378, name, { size: 34 }))
+    .join('\n');
   const body = `
 <rect x="24" y="24" width="1152" height="472" rx="26" class="panel" filter="url(#shadow)"/>
 <rect x="48" y="48" width="1104" height="58" rx="14" fill="${C.bg}" stroke="${C.border}"/>
@@ -155,6 +261,7 @@ function whoami() {
 ${t(166, 84, '/profil/whoami.yaml', { size: 18, cls: 'muted', family: 'mono', weight: 800 })}
 ${t(980, 84, 'LANG: FR', { size: 17, cls: 'green', family: 'mono', weight: 900 })}
 ${rows.map(([k,v,y], i) => `${t(74, y, `${k}:`, { size: 21, cls: 'blue', family: 'mono', weight: 900 })}${paragraph(220, y, v, 46, { size: i === 0 ? 30 : 22, cls: i === 0 ? 'text' : 'soft', weight: i === 0 ? 900 : 700, leading: 28 })}`).join('\n')}
+${languageMarks}
 <g transform="translate(856 166)">
   ${panel(0, 0, 238, 238, 20, 'panel2')}
   <rect x="28" y="34" width="142" height="40" rx="8" fill="${C.blue}22" stroke="${C.blue}"/>
@@ -165,42 +272,41 @@ ${rows.map(([k,v,y], i) => `${t(74, y, `${k}:`, { size: 21, cls: 'blue', family:
   ${t(52, 188, 'DATA', { size: 16, cls: 'green', family: 'mono', weight: 900 })}
   <path d="M170 54h34v128h-60" stroke="${C.blue}" stroke-width="4" stroke-linecap="round"/>
 </g>
-${chip(840, 430, 'private client code respected', C.purple, 286)}`;
+${chip(840, 458, 'private client code respected', C.purple, 286)}`;
   return svg({ width: 1200, height: 520, title: 'Whoami backend profile', desc: 'Carte identité backend pour Ferdi.', body });
 }
 
 function stackCarousel() {
   const items = [
-    ['Créer API', 'FastAPI', 'NestJS', 'Express', C.blue],
-    ['Stocker', 'PostgreSQL', 'SQLite', 'Redis', C.green],
-    ['Faire tourner', 'Workers', 'WebSocket', 'MQTT', C.purple],
-    ['Livrer', 'Docker', 'CI/CD', 'Monitoring', C.orange],
+    { title: 'Créer API', tech: ['FastAPI', 'NestJS', 'Express'], color: C.blue },
+    { title: 'Stocker', tech: ['PostgreSQL', 'SQLite', 'Redis'], color: C.green },
+    { title: 'Faire tourner', tech: ['Workers', 'WebSocket', 'MQTT'], color: C.purple },
+    { title: 'Livrer', tech: ['Docker', 'CI/CD', 'Monitoring'], color: C.orange },
   ];
   const cards = items.map((it, i) => {
     const x = 54 + i * 280;
     return `<g transform="translate(${x} 154)">
       ${panel(0,0,246,270,18,'panel2')}
-      <rect x="0" y="0" width="246" height="50" rx="18" fill="${it[4]}22" stroke="${it[4]}"/>
-      ${t(22, 32, it[0].toUpperCase(), { size: 16, cls: 'text', family: 'mono', weight: 900 })}
-      ${t(24, 100, it[1], { size: 27, cls: 'text', weight: 900 })}
-      ${t(24, 148, it[2], { size: 27, cls: 'soft', weight: 850 })}
-      ${t(24, 196, it[3], { size: 27, cls: 'soft', weight: 850 })}
-      <rect x="24" y="224" width="150" height="8" rx="4" fill="${it[4]}"/>
+      <rect x="0" y="0" width="246" height="50" rx="18" fill="${it.color}22" stroke="${it.color}"/>
+      ${t(22, 32, it.title.toUpperCase(), { size: 16, cls: 'text', family: 'mono', weight: 900 })}
+      ${it.tech.map((name, j) => techStackRow(24, 100 + j * 48, name, { emphasis: j === 0 })).join('\n')}
+      <rect x="24" y="224" width="150" height="8" rx="4" fill="${it.color}"/>
     </g>`;
   }).join('\n');
+  const logos = publicApps.map((app, i) => appLogoBadge(58 + i * 216, 106, app)).join('\n');
   const body = `
 <rect x="24" y="24" width="1152" height="512" rx="26" class="panel" filter="url(#shadow)"/>
 ${t(58, 82, 'Stack Backend', { size: 42, cls: 'text', weight: 900 })}
-${t(58, 118, 'Un carousel statique façon profil premium: chaque bloc explique une capacité backend.', { size: 19, cls: 'muted' })}
-${chip(900, 62, 'utility before buzzword', C.green, 240)}
+${chip(930, 62, 'apps publiques', C.green, 182)}
+${logos}
 ${cards}
 <rect x="58" y="462" width="1084" height="42" rx="10" fill="${C.bg}" stroke="${C.border}"/>
 ${t(84, 489, 'idée -> API -> auth -> données -> workers -> mobile/web -> livraison', { size: 17, cls: 'blue', family: 'mono', weight: 800 })}`;
-  return svg({ width: 1200, height: 560, title: 'Stack backend carousel', desc: 'Carousel statique de stack backend.', body });
+  return svg({ width: 1200, height: 560, title: 'Stack backend TheLaboFerdi', desc: 'Stack backend avec apps publiques, langages et outils.', body });
 }
 
 function projectCard(p) {
-  const techs = p.tech.map((name, i) => chip(520 + i * 112, 300, name, p.color, 98)).join('\n');
+  const techs = p.tech.map((name, i) => techLogoChip(520 + i * 136, 300, name, p.color, 124)).join('\n');
   const body = `
 <rect x="2" y="2" width="1176" height="426" rx="30" class="panel" stroke="${p.color}" stroke-width="3" filter="url(#shadow)"/>
 <rect x="38" y="78" width="430" height="270" rx="22" class="panel2"/>
@@ -213,7 +319,8 @@ ${t(84, 249, p.command, { size: 16, cls: 'green', family: 'mono', weight: 800 })
 ${paragraph(64, 304, p.flow, 37, { size: 16, cls: 'soft', family: 'mono', weight: 750, leading: 26 })}
 ${t(520, 42, p.kicker, { size: 17, cls: 'blue', family: 'mono', weight: 900 })}
 ${t(520, 82, p.name, { size: 42, cls: 'text', weight: 900 })}
-${paragraph(520, 142, p.desc, 58, { size: 21, cls: 'soft', weight: 650, leading: 31 })}
+${projectLogoMark(1036, 44, p)}
+${paragraph(520, 160, p.desc, 58, { size: 21, cls: 'soft', weight: 650, leading: 31 })}
 ${t(520, 280, 'STACK TECHNIQUE', { size: 15, cls: 'muted', family: 'mono', weight: 900 })}
 ${techs}
 <line x1="520" y1="378" x2="1124" y2="378" stroke="${C.border}" stroke-width="2"/>
@@ -224,12 +331,12 @@ ${t(1124, 406, 'TheLaboFerdi', { size: 20, cls: 'muted', family: 'mono', weight:
 
 function confidential() {
   const cases = [
-    ['Mobilité terrain', 'API + cartes + fichiers', C.blue],
-    ['Assistant IA métier', 'RAG + cache + API', C.purple],
-    ['Automatisation vente', 'WhatsApp + desktop', C.green],
-    ['OCR & fichiers', 'mobile + backend', C.orange],
-    ['IoT énergie', 'MQTT + workers', C.green],
-    ['Outils internes', 'routes + services', C.blue],
+    ['Mobilité terrain', 'API + cartes + fichiers', C.blue, 'Mobile'],
+    ['Assistant IA métier', 'RAG + cache + API', C.purple, 'RAG'],
+    ['Automatisation vente', 'WhatsApp + desktop', C.green, 'WhatsApp'],
+    ['OCR & fichiers', 'mobile + backend', C.orange, 'OCR'],
+    ['IoT énergie', 'MQTT + workers', C.green, 'MQTT'],
+    ['Outils internes', 'routes + services', C.blue, 'Ops'],
   ];
   const cards = cases.map((c, i) => {
     const x = 54 + (i % 3) * 364;
@@ -238,6 +345,7 @@ function confidential() {
       ${panel(0,0,326,118,16,'panel2')}
       <rect x="0" y="0" width="326" height="38" rx="16" fill="${c[2]}22" stroke="${c[2]}"/>
       ${t(20, 25, c[0].toUpperCase(), { size: 15, cls: 'text', family: 'mono', weight: 900 })}
+      ${logoMark(272, 56, c[3], { size: 34, color: c[2] })}
       ${t(20, 78, c[1], { size: 21, cls: 'soft', weight: 850 })}
       ${t(20, 102, 'code privé · client confidentiel', { size: 13, cls: 'muted', family: 'mono', weight: 800 })}
     </g>`;
@@ -254,23 +362,27 @@ ${t(84, 477, 'savoir-faire visible · données client protégées · livraison p
 }
 
 function statsCards() {
+  const stats = [
+    ['Repos publics', '30+', 'GitHub', C.blue],
+    ['Backends privés', 'client', 'API', C.purple],
+    ['Stack principale', 'TS/Py', 'TypeScript', C.green],
+    ['Livraison', 'Docker', 'Docker', C.orange],
+  ];
   const body = `
 <rect x="24" y="24" width="1152" height="312" rx="26" class="panel" filter="url(#shadow)"/>
 ${t(58, 82, 'GitHub Stats', { size: 40, cls: 'text', weight: 900 })}
 ${t(58, 116, 'Lecture orientée backend: activité, langages, maintenance et livraison.', { size: 18, cls: 'muted' })}
-${[
-  ['Repos publics', '30+', C.blue], ['Backends privés', 'client', C.purple], ['Stack principale', 'TS/Py', C.green], ['Livraison', 'Docker', C.orange]
-].map((s, i) => `<g transform="translate(${58 + i * 274} 164)">${panel(0,0,238,112,18,'panel2')}${t(22,38,s[0],{size:16,cls:'muted',family:'mono',weight:800})}${t(22,82,s[1],{size:34,cls:'text',weight:900})}<rect x="22" y="92" width="120" height="7" rx="4" fill="${s[2]}"/></g>`).join('\n')}`;
+${stats.map((s, i) => `<g transform="translate(${58 + i * 274} 164)">${panel(0,0,238,112,18,'panel2')}${logoMark(178,22,s[2],{size:38,color:s[3]})}${t(22,38,s[0],{size:16,cls:'muted',family:'mono',weight:800})}${t(22,82,s[1],{size:34,cls:'text',weight:900})}<rect x="22" y="92" width="120" height="7" rx="4" fill="${s[3]}"/></g>`).join('\n')}`;
   return svg({ width: 1200, height: 360, title: 'GitHub stats cards', desc: 'Cartes de statistiques GitHub stylisées.', body });
 }
 
 function insights() {
   const langs = [
-    ['TypeScript', 42, C.blue], ['Python', 25, C.green], ['JavaScript', 14, C.orange], ['Rust/Go', 11, C.purple], ['Other', 8, C.muted],
+    ['TypeScript', 42, C.blue, 'TypeScript'], ['Python', 25, C.green, 'Python'], ['JavaScript', 14, C.orange, 'JavaScript'], ['Rust/Go', 11, C.purple, 'Rust'], ['Other', 8, C.muted, 'GitHub'],
   ];
   const bars = langs.map((l, i) => {
     const y = 126 + i * 46;
-    return `${t(72, y, l[0], { size: 18, cls: 'soft', weight: 800 })}<rect x="286" y="${y - 15}" width="650" height="12" rx="6" fill="${C.border}"/><rect x="286" y="${y - 15}" width="${l[1] * 6.5}" height="12" rx="6" fill="${l[2]}"/>${t(970, y, `${l[1]}%`, { size: 18, cls: 'muted', family: 'mono', weight: 800 })}`;
+    return `${logoMark(72, y - 28, l[3], { size: 30, color: l[2] })}${t(116, y, l[0], { size: 18, cls: 'soft', weight: 800 })}<rect x="286" y="${y - 15}" width="650" height="12" rx="6" fill="${C.border}"/><rect x="286" y="${y - 15}" width="${l[1] * 6.5}" height="12" rx="6" fill="${l[2]}"/>${t(970, y, `${l[1]}%`, { size: 18, cls: 'muted', family: 'mono', weight: 800 })}`;
   }).join('\n');
   const body = `
 <rect x="24" y="24" width="1152" height="368" rx="26" class="panel" filter="url(#shadow)"/>
@@ -282,10 +394,14 @@ ${chip(72, 322, 'APIs', C.blue, 74)}${chip(162, 322, 'workers', C.purple, 108)}$
 
 function activity() {
   const points = 'M78 276 C136 218 160 236 208 178 S288 154 326 198 S390 254 438 180 S526 118 590 166 S682 226 732 148 S824 94 902 132 S1000 210 1102 88';
+  const tools = ['GitHub', 'TypeScript', 'Python', 'Docker', 'API']
+    .map((name, i) => logoMark(862 + i * 48, 64, name, { size: 34 }))
+    .join('\n');
   const body = `
 <rect x="24" y="24" width="1152" height="332" rx="26" class="panel" filter="url(#shadow)"/>
 ${t(58, 82, 'Activité GitHub', { size: 40, cls: 'text', weight: 900 })}
 ${t(58, 116, 'Un rythme de build: commits, itérations, corrections, livraisons.', { size: 18, cls: 'muted' })}
+${tools}
 <rect x="58" y="148" width="1084" height="156" rx="18" fill="${C.bg}" stroke="${C.border}"/>
 <path d="${points} V304 H78 Z" fill="${C.blue2}" opacity="0.18"/>
 <path d="${points}" stroke="${C.blue}" stroke-width="4" fill="none" stroke-linecap="round"/>
@@ -295,16 +411,16 @@ ${t(78, 332, 'commit stream · backend work · private repos included', { size: 
 
 function journey() {
   const steps = [
-    ['01', 'Comprendre', 'besoin métier, contraintes, données'],
-    ['02', 'Concevoir', 'routes, DB, auth, erreurs'],
-    ['03', 'Construire', 'API, workers, realtime, mobile'],
-    ['04', 'Livrer', 'Docker, docs, logs, maintenance'],
+    ['01', 'Comprendre', 'besoin métier, contraintes, données', 'Idea'],
+    ['02', 'Concevoir', 'routes, DB, auth, erreurs', 'Design'],
+    ['03', 'Construire', 'API, workers, realtime, mobile', 'Build'],
+    ['04', 'Livrer', 'Docker, docs, logs, maintenance', 'Docker'],
   ];
   const body = `
 <rect x="24" y="24" width="1152" height="322" rx="26" class="panel" filter="url(#shadow)"/>
 ${t(58, 82, 'Parcours & Disponibilité', { size: 40, cls: 'text', weight: 900 })}
 ${t(58, 116, 'Disponible pour transformer une idée en backend fiable et maintenable.', { size: 18, cls: 'muted' })}
-${steps.map((s, i) => `<g transform="translate(${58 + i * 274} 166)">${panel(0,0,236,120,18,'panel2')}${t(24,38,s[0],{size:18,cls:'blue',family:'mono',weight:900})}${t(24,72,s[1],{size:28,cls:'text',weight:900})}${paragraph(24,100,s[2],25,{size:14,cls:'muted',leading:20})}</g>`).join('\n')}`;
+${steps.map((s, i) => `<g transform="translate(${58 + i * 274} 166)">${panel(0,0,236,120,18,'panel2')}${logoMark(176,22,s[3],{size:36})}${t(24,38,s[0],{size:18,cls:'blue',family:'mono',weight:900})}${t(24,72,s[1],{size:28,cls:'text',weight:900})}${paragraph(24,100,s[2],25,{size:14,cls:'muted',leading:20})}</g>`).join('\n')}`;
   return svg({ width: 1200, height: 370, title: 'Parcours et disponibilité', desc: 'Workflow de collaboration backend.', body });
 }
 
@@ -321,6 +437,7 @@ ${t(884, 92, 'github.com/thelabofferdi', { size: 17, cls: 'blue', family: 'mono'
 const projects = [
   {
     file: 'sellbulk.svg', name: 'SellBulk', kicker: 'PUBLIC · AUTOMATISATION COMMERCIALE',
+    logo: 'SB',
     terminalTitle: 'sellbulk/api', terminalLine: 'moteurs, stats, messages', command: '$ docker compose up',
     flow: 'messages -> API -> workers -> métriques -> livraison',
     desc: 'Backend pour automatisation WhatsApp avec moteur robuste, suivi et livraison conteneurisée.',
@@ -328,6 +445,7 @@ const projects = [
   },
   {
     file: 'whatautosys.svg', name: 'WhatAutoSys v3', kicker: 'DESKTOP · REALTIME · LOCAL DATA',
+    logo: 'WA',
     terminalTitle: 'whatautosys/local', terminalLine: 'WhatsApp, fichiers, IA', command: '$ npm run dev',
     flow: 'desktop -> Express -> Socket.IO -> SQLite -> IA locale',
     desc: 'Application locale qui connecte WhatsApp, fichiers et IA avec une API temps réel simple.',
@@ -335,6 +453,7 @@ const projects = [
   },
   {
     file: 'ghostpoll.svg', name: 'GhostPoll', kicker: 'PRIVACY · POLLS · LINKS',
+    logo: 'GP',
     terminalTitle: 'ghostpoll/session', terminalLine: 'créer, voter, effacer', command: '$ pnpm dev',
     flow: 'poll -> NanoID -> QR -> vote -> expiration',
     desc: 'Sondages anonymes et éphémères avec liens courts, QR et cycle de vie minimaliste.',
@@ -342,6 +461,7 @@ const projects = [
   },
   {
     file: 'clipintelli.svg', name: 'ClipIntelli', kicker: 'LOCAL · CLIPBOARD · AI',
+    logo: 'CI',
     terminalTitle: 'clipintelli/db', terminalLine: 'capturer, classer, aider', command: '$ electron .',
     flow: 'clipboard -> sql.js -> index -> AI helper -> desktop',
     desc: 'Gestionnaire de presse-papiers intelligent avec données locales et assistance IA.',
@@ -349,6 +469,7 @@ const projects = [
   },
   {
     file: 'biology-space.svg', name: 'SpaceBio AI', kicker: 'RECHERCHE · NASA · AI',
+    logo: 'BIO',
     terminalTitle: 'spacebio/index', terminalLine: 'articles, recherche, chat', command: '$ python manage.py runserver',
     flow: 'articles -> Django -> SQLite -> LLM -> exploration',
     desc: 'Plateforme de recherche pour explorer des articles de biologie spatiale avec assistance IA.',

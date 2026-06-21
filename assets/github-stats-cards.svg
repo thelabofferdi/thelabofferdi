@@ -36,8 +36,24 @@
 <rect x="24" y="24" width="1152" height="312" rx="26" class="panel" filter="url(#shadow)"/>
 <text x="58" y="82" class="sans text" font-size="40" font-weight="900" text-anchor="start" opacity="1">GitHub Stats</text>
 <text x="58" y="116" class="sans muted" font-size="18" font-weight="500" text-anchor="start" opacity="1">Lecture orientée backend: activité, langages, maintenance et livraison.</text>
-<g transform="translate(58 164)"><rect x="0" y="0" width="238" height="112" rx="18" class="panel2"/><text x="22" y="38" class="mono muted" font-size="16" font-weight="800" text-anchor="start" opacity="1">Repos publics</text><text x="22" y="82" class="sans text" font-size="34" font-weight="900" text-anchor="start" opacity="1">30+</text><rect x="22" y="92" width="120" height="7" rx="4" fill="#58a6ff"/></g>
-<g transform="translate(332 164)"><rect x="0" y="0" width="238" height="112" rx="18" class="panel2"/><text x="22" y="38" class="mono muted" font-size="16" font-weight="800" text-anchor="start" opacity="1">Backends privés</text><text x="22" y="82" class="sans text" font-size="34" font-weight="900" text-anchor="start" opacity="1">client</text><rect x="22" y="92" width="120" height="7" rx="4" fill="#bc8cff"/></g>
-<g transform="translate(606 164)"><rect x="0" y="0" width="238" height="112" rx="18" class="panel2"/><text x="22" y="38" class="mono muted" font-size="16" font-weight="800" text-anchor="start" opacity="1">Stack principale</text><text x="22" y="82" class="sans text" font-size="34" font-weight="900" text-anchor="start" opacity="1">TS/Py</text><rect x="22" y="92" width="120" height="7" rx="4" fill="#3fb950"/></g>
-<g transform="translate(880 164)"><rect x="0" y="0" width="238" height="112" rx="18" class="panel2"/><text x="22" y="38" class="mono muted" font-size="16" font-weight="800" text-anchor="start" opacity="1">Livraison</text><text x="22" y="82" class="sans text" font-size="34" font-weight="900" text-anchor="start" opacity="1">Docker</text><rect x="22" y="92" width="120" height="7" rx="4" fill="#d29922"/></g>
+<g transform="translate(58 164)"><rect x="0" y="0" width="238" height="112" rx="18" class="panel2"/><g opacity="1">
+    <rect x="178" y="22" width="38" height="38" rx="11" fill="#58a6ff22" stroke="#58a6ff" stroke-width="1.4"/>
+    <circle cx="197" cy="41" r="11" fill="#58a6ff" opacity="0.95"/>
+    <text x="197" y="44.04" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="13" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">GH</text>
+  </g><text x="22" y="38" class="mono muted" font-size="16" font-weight="800" text-anchor="start" opacity="1">Repos publics</text><text x="22" y="82" class="sans text" font-size="34" font-weight="900" text-anchor="start" opacity="1">30+</text><rect x="22" y="92" width="120" height="7" rx="4" fill="#58a6ff"/></g>
+<g transform="translate(332 164)"><rect x="0" y="0" width="238" height="112" rx="18" class="panel2"/><g opacity="1">
+    <rect x="178" y="22" width="38" height="38" rx="11" fill="#bc8cff22" stroke="#bc8cff" stroke-width="1.4"/>
+    <circle cx="197" cy="41" r="11" fill="#bc8cff" opacity="0.95"/>
+    <text x="197" y="44.04" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">API</text>
+  </g><text x="22" y="38" class="mono muted" font-size="16" font-weight="800" text-anchor="start" opacity="1">Backends privés</text><text x="22" y="82" class="sans text" font-size="34" font-weight="900" text-anchor="start" opacity="1">client</text><rect x="22" y="92" width="120" height="7" rx="4" fill="#bc8cff"/></g>
+<g transform="translate(606 164)"><rect x="0" y="0" width="238" height="112" rx="18" class="panel2"/><g opacity="1">
+    <rect x="178" y="22" width="38" height="38" rx="11" fill="#3fb95022" stroke="#3fb950" stroke-width="1.4"/>
+    <circle cx="197" cy="41" r="11" fill="#3fb950" opacity="0.95"/>
+    <text x="197" y="44.04" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="13" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">TS</text>
+  </g><text x="22" y="38" class="mono muted" font-size="16" font-weight="800" text-anchor="start" opacity="1">Stack principale</text><text x="22" y="82" class="sans text" font-size="34" font-weight="900" text-anchor="start" opacity="1">TS/Py</text><rect x="22" y="92" width="120" height="7" rx="4" fill="#3fb950"/></g>
+<g transform="translate(880 164)"><rect x="0" y="0" width="238" height="112" rx="18" class="panel2"/><g opacity="1">
+    <rect x="178" y="22" width="38" height="38" rx="11" fill="#d2992222" stroke="#d29922" stroke-width="1.4"/>
+    <circle cx="197" cy="41" r="11" fill="#d29922" opacity="0.95"/>
+    <text x="197" y="44.04" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="13" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">DK</text>
+  </g><text x="22" y="38" class="mono muted" font-size="16" font-weight="800" text-anchor="start" opacity="1">Livraison</text><text x="22" y="82" class="sans text" font-size="34" font-weight="900" text-anchor="start" opacity="1">Docker</text><rect x="22" y="92" width="120" height="7" rx="4" fill="#d29922"/></g>
 </svg>

@@ -36,11 +36,27 @@
 <rect x="24" y="24" width="1152" height="322" rx="26" class="panel" filter="url(#shadow)"/>
 <text x="58" y="82" class="sans text" font-size="40" font-weight="900" text-anchor="start" opacity="1">Parcours &amp; Disponibilité</text>
 <text x="58" y="116" class="sans muted" font-size="18" font-weight="500" text-anchor="start" opacity="1">Disponible pour transformer une idée en backend fiable et maintenable.</text>
-<g transform="translate(58 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">01</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Comprendre</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">besoin métier,</text>
+<g transform="translate(58 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><g opacity="1">
+    <rect x="176" y="22" width="36" height="36" rx="10" fill="#58a6ff22" stroke="#58a6ff" stroke-width="1.4"/>
+    <circle cx="194" cy="40" r="10" fill="#58a6ff" opacity="0.95"/>
+    <text x="194" y="42.879999999999995" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">01</text>
+  </g><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">01</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Comprendre</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">besoin métier,</text>
 <text x="24" y="120" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">contraintes, données</text></g>
-<g transform="translate(332 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">02</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Concevoir</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">routes, DB, auth, erreurs</text></g>
-<g transform="translate(606 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">03</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Construire</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">API, workers, realtime,</text>
+<g transform="translate(332 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><g opacity="1">
+    <rect x="176" y="22" width="36" height="36" rx="10" fill="#bc8cff22" stroke="#bc8cff" stroke-width="1.4"/>
+    <circle cx="194" cy="40" r="10" fill="#bc8cff" opacity="0.95"/>
+    <text x="194" y="42.879999999999995" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">02</text>
+  </g><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">02</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Concevoir</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">routes, DB, auth, erreurs</text></g>
+<g transform="translate(606 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><g opacity="1">
+    <rect x="176" y="22" width="36" height="36" rx="10" fill="#3fb95022" stroke="#3fb950" stroke-width="1.4"/>
+    <circle cx="194" cy="40" r="10" fill="#3fb950" opacity="0.95"/>
+    <text x="194" y="42.879999999999995" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">03</text>
+  </g><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">03</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Construire</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">API, workers, realtime,</text>
 <text x="24" y="120" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">mobile</text></g>
-<g transform="translate(880 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">04</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Livrer</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">Docker, docs, logs,</text>
+<g transform="translate(880 166)"><rect x="0" y="0" width="236" height="120" rx="18" class="panel2"/><g opacity="1">
+    <rect x="176" y="22" width="36" height="36" rx="10" fill="#2496ED22" stroke="#2496ED" stroke-width="1.4"/>
+    <circle cx="194" cy="40" r="10" fill="#2496ED" opacity="0.95"/>
+    <text x="194" y="42.879999999999995" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">DK</text>
+  </g><text x="24" y="38" class="mono blue" font-size="18" font-weight="900" text-anchor="start" opacity="1">04</text><text x="24" y="72" class="sans text" font-size="28" font-weight="900" text-anchor="start" opacity="1">Livrer</text><text x="24" y="100" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">Docker, docs, logs,</text>
 <text x="24" y="120" class="sans muted" font-size="14" font-weight="500" text-anchor="start" opacity="1">maintenance</text></g>
 </svg>

@@ -42,6 +42,11 @@
       <rect x="0" y="0" width="326" height="118" rx="16" class="panel2"/>
       <rect x="0" y="0" width="326" height="38" rx="16" fill="#58a6ff22" stroke="#58a6ff"/>
       <text x="20" y="25" class="mono text" font-size="15" font-weight="900" text-anchor="start" opacity="1">MOBILITÉ TERRAIN</text>
+      <g opacity="1">
+    <rect x="272" y="56" width="34" height="34" rx="10" fill="#58a6ff22" stroke="#58a6ff" stroke-width="1.4"/>
+    <circle cx="289" cy="73" r="10" fill="#58a6ff" opacity="0.95"/>
+    <text x="289" y="75.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">Mb</text>
+  </g>
       <text x="20" y="78" class="sans soft" font-size="21" font-weight="850" text-anchor="start" opacity="1">API + cartes + fichiers</text>
       <text x="20" y="102" class="mono muted" font-size="13" font-weight="800" text-anchor="start" opacity="1">code privé · client confidentiel</text>
     </g>
@@ -49,6 +54,11 @@
       <rect x="0" y="0" width="326" height="118" rx="16" class="panel2"/>
       <rect x="0" y="0" width="326" height="38" rx="16" fill="#bc8cff22" stroke="#bc8cff"/>
       <text x="20" y="25" class="mono text" font-size="15" font-weight="900" text-anchor="start" opacity="1">ASSISTANT IA MÉTIER</text>
+      <g opacity="1">
+    <rect x="272" y="56" width="34" height="34" rx="10" fill="#bc8cff22" stroke="#bc8cff" stroke-width="1.4"/>
+    <circle cx="289" cy="73" r="10" fill="#bc8cff" opacity="0.95"/>
+    <text x="289" y="75.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">AI</text>
+  </g>
       <text x="20" y="78" class="sans soft" font-size="21" font-weight="850" text-anchor="start" opacity="1">RAG + cache + API</text>
       <text x="20" y="102" class="mono muted" font-size="13" font-weight="800" text-anchor="start" opacity="1">code privé · client confidentiel</text>
     </g>
@@ -56,6 +66,11 @@
       <rect x="0" y="0" width="326" height="118" rx="16" class="panel2"/>
       <rect x="0" y="0" width="326" height="38" rx="16" fill="#3fb95022" stroke="#3fb950"/>
       <text x="20" y="25" class="mono text" font-size="15" font-weight="900" text-anchor="start" opacity="1">AUTOMATISATION VENTE</text>
+      <g opacity="1">
+    <rect x="272" y="56" width="34" height="34" rx="10" fill="#3fb95022" stroke="#3fb950" stroke-width="1.4"/>
+    <circle cx="289" cy="73" r="10" fill="#3fb950" opacity="0.95"/>
+    <text x="289" y="75.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">WA</text>
+  </g>
       <text x="20" y="78" class="sans soft" font-size="21" font-weight="850" text-anchor="start" opacity="1">WhatsApp + desktop</text>
       <text x="20" y="102" class="mono muted" font-size="13" font-weight="800" text-anchor="start" opacity="1">code privé · client confidentiel</text>
     </g>
@@ -63,6 +78,11 @@
       <rect x="0" y="0" width="326" height="118" rx="16" class="panel2"/>
       <rect x="0" y="0" width="326" height="38" rx="16" fill="#d2992222" stroke="#d29922"/>
       <text x="20" y="25" class="mono text" font-size="15" font-weight="900" text-anchor="start" opacity="1">OCR &amp; FICHIERS</text>
+      <g opacity="1">
+    <rect x="272" y="56" width="34" height="34" rx="10" fill="#d2992222" stroke="#d29922" stroke-width="1.4"/>
+    <circle cx="289" cy="73" r="10" fill="#d29922" opacity="0.95"/>
+    <text x="289" y="75.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">OCR</text>
+  </g>
       <text x="20" y="78" class="sans soft" font-size="21" font-weight="850" text-anchor="start" opacity="1">mobile + backend</text>
       <text x="20" y="102" class="mono muted" font-size="13" font-weight="800" text-anchor="start" opacity="1">code privé · client confidentiel</text>
     </g>
@@ -70,6 +90,11 @@
       <rect x="0" y="0" width="326" height="118" rx="16" class="panel2"/>
       <rect x="0" y="0" width="326" height="38" rx="16" fill="#3fb95022" stroke="#3fb950"/>
       <text x="20" y="25" class="mono text" font-size="15" font-weight="900" text-anchor="start" opacity="1">IOT ÉNERGIE</text>
+      <g opacity="1">
+    <rect x="272" y="56" width="34" height="34" rx="10" fill="#3fb95022" stroke="#3fb950" stroke-width="1.4"/>
+    <circle cx="289" cy="73" r="10" fill="#3fb950" opacity="0.95"/>
+    <text x="289" y="75.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">MQ</text>
+  </g>
       <text x="20" y="78" class="sans soft" font-size="21" font-weight="850" text-anchor="start" opacity="1">MQTT + workers</text>
       <text x="20" y="102" class="mono muted" font-size="13" font-weight="800" text-anchor="start" opacity="1">code privé · client confidentiel</text>
     </g>
@@ -77,6 +102,11 @@
       <rect x="0" y="0" width="326" height="118" rx="16" class="panel2"/>
       <rect x="0" y="0" width="326" height="38" rx="16" fill="#58a6ff22" stroke="#58a6ff"/>
       <text x="20" y="25" class="mono text" font-size="15" font-weight="900" text-anchor="start" opacity="1">OUTILS INTERNES</text>
+      <g opacity="1">
+    <rect x="272" y="56" width="34" height="34" rx="10" fill="#58a6ff22" stroke="#58a6ff" stroke-width="1.4"/>
+    <circle cx="289" cy="73" r="10" fill="#58a6ff" opacity="0.95"/>
+    <text x="289" y="75.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">Ops</text>
+  </g>
       <text x="20" y="78" class="sans soft" font-size="21" font-weight="850" text-anchor="start" opacity="1">routes + services</text>
       <text x="20" y="102" class="mono muted" font-size="13" font-weight="800" text-anchor="start" opacity="1">code privé · client confidentiel</text>
     </g>

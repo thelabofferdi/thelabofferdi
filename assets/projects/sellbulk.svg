@@ -45,17 +45,51 @@
 <text x="64" y="330" class="mono soft" font-size="16" font-weight="750" text-anchor="start" opacity="1">métriques -&gt; livraison</text>
 <text x="520" y="42" class="mono blue" font-size="17" font-weight="900" text-anchor="start" opacity="1">PUBLIC · AUTOMATISATION COMMERCIALE</text>
 <text x="520" y="82" class="sans text" font-size="42" font-weight="900" text-anchor="start" opacity="1">SellBulk</text>
-<text x="520" y="142" class="sans soft" font-size="21" font-weight="650" text-anchor="start" opacity="1">Backend pour automatisation WhatsApp avec moteur robuste,</text>
-<text x="520" y="173" class="sans soft" font-size="21" font-weight="650" text-anchor="start" opacity="1">suivi et livraison conteneurisée.</text>
+<g transform="translate(1036 44)">
+    <rect x="0" y="0" width="88" height="88" rx="22" fill="#58a6ff18" stroke="#58a6ff" stroke-width="2.5"/>
+    <circle cx="44" cy="44" r="25" fill="#010409" stroke="#58a6ff" stroke-width="2"/>
+    <path d="M24 64h40" stroke="#58a6ff" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+    <text x="44" y="50" class="mono text" font-size="22" font-weight="900" text-anchor="middle" opacity="1">SB</text>
+  </g>
+<text x="520" y="160" class="sans soft" font-size="21" font-weight="650" text-anchor="start" opacity="1">Backend pour automatisation WhatsApp avec moteur robuste,</text>
+<text x="520" y="191" class="sans soft" font-size="21" font-weight="650" text-anchor="start" opacity="1">suivi et livraison conteneurisée.</text>
 <text x="520" y="280" class="mono muted" font-size="15" font-weight="900" text-anchor="start" opacity="1">STACK TECHNIQUE</text>
-<rect x="520" y="300" width="98" height="30" rx="15" fill="#58a6ff22" stroke="#58a6ff" stroke-opacity="0.76"/>
-<text x="534" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">Rust</text>
-<rect x="632" y="300" width="98" height="30" rx="15" fill="#58a6ff22" stroke="#58a6ff" stroke-opacity="0.76"/>
-<text x="646" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">Node</text>
-<rect x="744" y="300" width="98" height="30" rx="15" fill="#58a6ff22" stroke="#58a6ff" stroke-opacity="0.76"/>
-<text x="758" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">Docker</text>
-<rect x="856" y="300" width="98" height="30" rx="15" fill="#58a6ff22" stroke="#58a6ff" stroke-opacity="0.76"/>
-<text x="870" y="320" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">Metrics</text>
+<g transform="translate(520 300)">
+    <rect x="0" y="0" width="124" height="32" rx="16" fill="#58a6ff18" stroke="#58a6ff" stroke-opacity="0.82"/>
+    <g opacity="1">
+    <rect x="8" y="6" width="20" height="20" rx="6" fill="#DEA58422" stroke="#DEA584" stroke-width="1.4"/>
+    <circle cx="18" cy="16" r="6" fill="#DEA584" opacity="0.95"/>
+    <text x="18" y="17.6" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="7" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">Rs</text>
+  </g>
+    <text x="36" y="21" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="850" text-anchor="start" fill="#e6edf3" opacity="1">Rust</text>
+  </g>
+<g transform="translate(656 300)">
+    <rect x="0" y="0" width="124" height="32" rx="16" fill="#58a6ff18" stroke="#58a6ff" stroke-opacity="0.82"/>
+    <g opacity="1">
+    <rect x="8" y="6" width="20" height="20" rx="6" fill="#3C873A22" stroke="#3C873A" stroke-width="1.4"/>
+    <circle cx="18" cy="16" r="6" fill="#3C873A" opacity="0.95"/>
+    <text x="18" y="17.6" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="7" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">Nd</text>
+  </g>
+    <text x="36" y="21" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="850" text-anchor="start" fill="#e6edf3" opacity="1">Node</text>
+  </g>
+<g transform="translate(792 300)">
+    <rect x="0" y="0" width="124" height="32" rx="16" fill="#58a6ff18" stroke="#58a6ff" stroke-opacity="0.82"/>
+    <g opacity="1">
+    <rect x="8" y="6" width="20" height="20" rx="6" fill="#2496ED22" stroke="#2496ED" stroke-width="1.4"/>
+    <circle cx="18" cy="16" r="6" fill="#2496ED" opacity="0.95"/>
+    <text x="18" y="17.6" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="7" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">DK</text>
+  </g>
+    <text x="36" y="21" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="850" text-anchor="start" fill="#e6edf3" opacity="1">Docker</text>
+  </g>
+<g transform="translate(928 300)">
+    <rect x="0" y="0" width="124" height="32" rx="16" fill="#58a6ff18" stroke="#58a6ff" stroke-opacity="0.82"/>
+    <g opacity="1">
+    <rect x="8" y="6" width="20" height="20" rx="6" fill="#58a6ff22" stroke="#58a6ff" stroke-width="1.4"/>
+    <circle cx="18" cy="16" r="6" fill="#58a6ff" opacity="0.95"/>
+    <text x="18" y="17.6" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="7" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">Mx</text>
+  </g>
+    <text x="36" y="21" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="850" text-anchor="start" fill="#e6edf3" opacity="1">Metrics</text>
+  </g>
 <line x1="520" y1="378" x2="1124" y2="378" stroke="#30363d" stroke-width="2"/>
 <text x="520" y="406" class="sans green" font-size="20" font-weight="800" text-anchor="start" opacity="1">Code GitHub</text>
 <text x="1124" y="406" class="mono muted" font-size="20" font-weight="900" text-anchor="end" opacity="1">TheLaboFerdi</text>

@@ -36,19 +36,13 @@
 
 <div align="center">
 
-<img src="./assets/stack-carousel.svg" width="100%" alt="Carousel de stack backend TheLaboFerdi"/>
+<img src="./assets/stack-carousel.svg" width="100%" alt="Stack backend TheLaboFerdi"/>
 
 </div>
 
 ---
 
 ## Projets Publics
-
-<div align="center">
-
-> Chaque carte présente le rôle backend, le flux technique, la stack et le lien utile. Le style reprend la logique vitrine d'Elton, mais avec l'identité TheLaboFerdi: dark GitHub, bleu API, vert healthy, violet worker.
-
-</div>
 
 <a href="https://github.com/thelabofferdi/SellBulk">
   <img src="./assets/projects/sellbulk.svg" width="100%" alt="Carte projet SellBulk"/>

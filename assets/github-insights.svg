@@ -35,11 +35,31 @@
 
 <rect x="24" y="24" width="1152" height="368" rx="26" class="panel" filter="url(#shadow)"/>
 <text x="58" y="82" class="sans text" font-size="40" font-weight="900" text-anchor="start" opacity="1">GitHub Insights</text>
-<text x="72" y="126" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">TypeScript</text><rect x="286" y="111" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="111" width="273" height="12" rx="6" fill="#58a6ff"/><text x="970" y="126" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">42%</text>
-<text x="72" y="172" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">Python</text><rect x="286" y="157" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="157" width="162.5" height="12" rx="6" fill="#3fb950"/><text x="970" y="172" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">25%</text>
-<text x="72" y="218" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">JavaScript</text><rect x="286" y="203" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="203" width="91" height="12" rx="6" fill="#d29922"/><text x="970" y="218" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">14%</text>
-<text x="72" y="264" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">Rust/Go</text><rect x="286" y="249" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="249" width="71.5" height="12" rx="6" fill="#bc8cff"/><text x="970" y="264" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">11%</text>
-<text x="72" y="310" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">Other</text><rect x="286" y="295" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="295" width="52" height="12" rx="6" fill="#8b949e"/><text x="970" y="310" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">8%</text>
+<g opacity="1">
+    <rect x="72" y="98" width="30" height="30" rx="8" fill="#58a6ff22" stroke="#58a6ff" stroke-width="1.4"/>
+    <circle cx="87" cy="113" r="8" fill="#58a6ff" opacity="0.95"/>
+    <text x="87" y="115.4" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">TS</text>
+  </g><text x="116" y="126" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">TypeScript</text><rect x="286" y="111" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="111" width="273" height="12" rx="6" fill="#58a6ff"/><text x="970" y="126" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">42%</text>
+<g opacity="1">
+    <rect x="72" y="144" width="30" height="30" rx="8" fill="#3fb95022" stroke="#3fb950" stroke-width="1.4"/>
+    <circle cx="87" cy="159" r="8" fill="#3fb950" opacity="0.95"/>
+    <text x="87" y="161.4" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">Py</text>
+  </g><text x="116" y="172" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">Python</text><rect x="286" y="157" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="157" width="162.5" height="12" rx="6" fill="#3fb950"/><text x="970" y="172" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">25%</text>
+<g opacity="1">
+    <rect x="72" y="190" width="30" height="30" rx="8" fill="#d2992222" stroke="#d29922" stroke-width="1.4"/>
+    <circle cx="87" cy="205" r="8" fill="#d29922" opacity="0.95"/>
+    <text x="87" y="207.4" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">JS</text>
+  </g><text x="116" y="218" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">JavaScript</text><rect x="286" y="203" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="203" width="91" height="12" rx="6" fill="#d29922"/><text x="970" y="218" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">14%</text>
+<g opacity="1">
+    <rect x="72" y="236" width="30" height="30" rx="8" fill="#bc8cff22" stroke="#bc8cff" stroke-width="1.4"/>
+    <circle cx="87" cy="251" r="8" fill="#bc8cff" opacity="0.95"/>
+    <text x="87" y="253.4" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">Rs</text>
+  </g><text x="116" y="264" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">Rust/Go</text><rect x="286" y="249" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="249" width="71.5" height="12" rx="6" fill="#bc8cff"/><text x="970" y="264" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">11%</text>
+<g opacity="1">
+    <rect x="72" y="282" width="30" height="30" rx="8" fill="#8b949e22" stroke="#8b949e" stroke-width="1.4"/>
+    <circle cx="87" cy="297" r="8" fill="#8b949e" opacity="0.95"/>
+    <text x="87" y="299.4" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="10" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">GH</text>
+  </g><text x="116" y="310" class="sans soft" font-size="18" font-weight="800" text-anchor="start" opacity="1">Other</text><rect x="286" y="295" width="650" height="12" rx="6" fill="#30363d"/><rect x="286" y="295" width="52" height="12" rx="6" fill="#8b949e"/><text x="970" y="310" class="mono muted" font-size="18" font-weight="800" text-anchor="start" opacity="1">8%</text>
 <rect x="72" y="322" width="74" height="30" rx="15" fill="#58a6ff22" stroke="#58a6ff" stroke-opacity="0.76"/>
 <text x="86" y="342" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">APIs</text><rect x="162" y="322" width="108" height="30" rx="15" fill="#bc8cff22" stroke="#bc8cff" stroke-opacity="0.76"/>
 <text x="176" y="342" class="mono text" font-size="14" font-weight="800" text-anchor="start" opacity="1">workers</text><rect x="286" y="322" width="78" height="30" rx="15" fill="#3fb95022" stroke="#3fb950" stroke-opacity="0.76"/>

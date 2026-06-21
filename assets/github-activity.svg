@@ -36,6 +36,31 @@
 <rect x="24" y="24" width="1152" height="332" rx="26" class="panel" filter="url(#shadow)"/>
 <text x="58" y="82" class="sans text" font-size="40" font-weight="900" text-anchor="start" opacity="1">Activité GitHub</text>
 <text x="58" y="116" class="sans muted" font-size="18" font-weight="500" text-anchor="start" opacity="1">Un rythme de build: commits, itérations, corrections, livraisons.</text>
+<g opacity="1">
+    <rect x="862" y="64" width="34" height="34" rx="10" fill="#e6edf322" stroke="#e6edf3" stroke-width="1.4"/>
+    <circle cx="879" cy="81" r="10" fill="#e6edf3" opacity="0.95"/>
+    <text x="879" y="83.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#010409" opacity="1">GH</text>
+  </g>
+<g opacity="1">
+    <rect x="910" y="64" width="34" height="34" rx="10" fill="#3178C622" stroke="#3178C6" stroke-width="1.4"/>
+    <circle cx="927" cy="81" r="10" fill="#3178C6" opacity="0.95"/>
+    <text x="927" y="83.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">TS</text>
+  </g>
+<g opacity="1">
+    <rect x="958" y="64" width="34" height="34" rx="10" fill="#3776AB22" stroke="#3776AB" stroke-width="1.4"/>
+    <circle cx="975" cy="81" r="10" fill="#3776AB" opacity="0.95"/>
+    <text x="975" y="83.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">Py</text>
+  </g>
+<g opacity="1">
+    <rect x="1006" y="64" width="34" height="34" rx="10" fill="#2496ED22" stroke="#2496ED" stroke-width="1.4"/>
+    <circle cx="1023" cy="81" r="10" fill="#2496ED" opacity="0.95"/>
+    <text x="1023" y="83.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="12" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">DK</text>
+  </g>
+<g opacity="1">
+    <rect x="1054" y="64" width="34" height="34" rx="10" fill="#58a6ff22" stroke="#58a6ff" stroke-width="1.4"/>
+    <circle cx="1071" cy="81" r="10" fill="#58a6ff" opacity="0.95"/>
+    <text x="1071" y="83.72" font-family="SFMono-Regular,Consolas,Liberation Mono,monospace" font-size="9" font-weight="900" text-anchor="middle" fill="#e6edf3" opacity="1">API</text>
+  </g>
 <rect x="58" y="148" width="1084" height="156" rx="18" fill="#010409" stroke="#30363d"/>
 <path d="M78 276 C136 218 160 236 208 178 S288 154 326 198 S390 254 438 180 S526 118 590 166 S682 226 732 148 S824 94 902 132 S1000 210 1102 88 V304 H78 Z" fill="#1f6feb" opacity="0.18"/>
 <path d="M78 276 C136 218 160 236 208 178 S288 154 326 198 S390 254 438 180 S526 118 590 166 S682 226 732 148 S824 94 902 132 S1000 210 1102 88" stroke="#58a6ff" stroke-width="4" fill="none" stroke-linecap="round"/>
