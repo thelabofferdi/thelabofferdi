@@ -331,33 +331,36 @@ ${t(1124, 406, 'TheLaboFerdi', { size: 20, cls: 'muted', family: 'mono', weight:
 
 function confidential() {
   const cases = [
-    ['Mobilité terrain', 'API + cartes + fichiers', C.blue, 'Mobile'],
-    ['Assistant IA métier', 'RAG + cache + API', C.purple, 'RAG'],
-    ['Automatisation vente', 'WhatsApp + desktop', C.green, 'WhatsApp'],
-    ['OCR & fichiers', 'mobile + backend', C.orange, 'OCR'],
-    ['IoT énergie', 'MQTT + workers', C.green, 'MQTT'],
-    ['Outils internes', 'routes + services', C.blue, 'Ops'],
+    ['Mobilité terrain', 'API + cartes + fichiers', C.blue, 'Mobile', ['API', 'Data', 'Mobile']],
+    ['Assistant IA métier', 'RAG + cache + API', C.purple, 'RAG', ['RAG', 'API', 'Data']],
+    ['Automatisation vente', 'WhatsApp + desktop', C.green, 'WhatsApp', ['WhatsApp', 'Workers', 'Data']],
+    ['OCR & fichiers', 'mobile + backend', C.orange, 'OCR', ['OCR', 'API', 'Docker']],
+    ['IoT énergie', 'MQTT + workers', C.green, 'MQTT', ['MQTT', 'Workers', 'Monitoring']],
+    ['Outils internes', 'routes + services', C.blue, 'Ops', ['Auth', 'API', 'Docker']],
   ];
+  const topMarks = ['API', 'Auth', 'Data', 'Workers', 'Docker']
+    .map((name, i) => logoMark(800 + i * 50, 58, name, { size: 36 }))
+    .join('\n');
   const cards = cases.map((c, i) => {
     const x = 54 + (i % 3) * 364;
     const y = 146 + Math.floor(i / 3) * 152;
+    const miniMarks = c[4].map((name, j) => logoMark(20 + j * 40, 88, name, { size: 24, color: c[2] })).join('\n');
     return `<g transform="translate(${x} ${y})">
       ${panel(0,0,326,118,16,'panel2')}
       <rect x="0" y="0" width="326" height="38" rx="16" fill="${c[2]}22" stroke="${c[2]}"/>
       ${t(20, 25, c[0].toUpperCase(), { size: 15, cls: 'text', family: 'mono', weight: 900 })}
       ${logoMark(272, 56, c[3], { size: 34, color: c[2] })}
       ${t(20, 78, c[1], { size: 21, cls: 'soft', weight: 850 })}
-      ${t(20, 102, 'code privé · client confidentiel', { size: 13, cls: 'muted', family: 'mono', weight: 800 })}
+      ${miniMarks}
     </g>`;
   }).join('\n');
   const body = `
 <rect x="24" y="24" width="1152" height="492" rx="26" class="panel" filter="url(#shadow)"/>
 ${t(58, 82, 'Projets Clients Confidentiels', { size: 40, cls: 'text', weight: 900 })}
-${t(58, 116, 'Je montre le rôle, l’architecture et le résultat technique sans exposer les sources.', { size: 18, cls: 'muted' })}
-${chip(904, 64, 'no names · no private links', C.orange, 250)}
+${topMarks}
 ${cards}
 <rect x="58" y="452" width="1084" height="38" rx="10" fill="${C.bg}" stroke="${C.border}"/>
-${t(84, 477, 'savoir-faire visible · données client protégées · livraison propre', { size: 16, cls: 'green', family: 'mono', weight: 800 })}`;
+${t(84, 477, 'api -> auth -> data -> workers -> docker -> monitoring', { size: 16, cls: 'green', family: 'mono', weight: 800 })}`;
   return svg({ width: 1200, height: 540, title: 'Projets clients confidentiels', desc: 'Cartes anonymisées de projets backend clients.', body });
 }
 

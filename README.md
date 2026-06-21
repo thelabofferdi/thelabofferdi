@@ -104,12 +104,6 @@
 
 </div>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Code-priv%C3%A9%20%2F%20client%20confidentiel-0d1117?style=for-the-badge&logo=github&logoColor=BC8CFF" alt="Code privé"/>
-  <img src="https://img.shields.io/badge/Angle-APIs%20%2B%20Mobile%20%2B%20Workers-161b22?style=for-the-badge&logo=serverless&logoColor=58A6FF" alt="Angle backend"/>
-  <img src="https://img.shields.io/badge/Livraison-Docker%20%2B%20Auth%20%2B%20Data-0d1117?style=for-the-badge&logo=docker&logoColor=3FB950" alt="Livraison"/>
-</p>
-
 ---
 
 ## GitHub Stats
